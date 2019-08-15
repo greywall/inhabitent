@@ -17,10 +17,11 @@ get_header(); ?>
 	</section>
 
 
-<section class="container">
+<section class="container shop-products">
 <h2>Shop Stuff</h2>
-<?php
 
+<div class="all-product-types">
+<?php
 $shopArgs = [
 	'taxonomy' => 'product-type',
 	'hide_empty' => true,
@@ -29,19 +30,26 @@ $shopArgs = [
 $terms = get_terms ( $shopArgs);
 
 foreach ( $terms as $term ) {
-	// echo '<pre>' . var_dump( $term ) . '</pre>';
-
-	// $icon = get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg';
-	// var_dump( file_exists( $icon ) );
-	// var_dump( $icon );
 	
+	
+	echo '<div class="product-type-holder">';
 	echo '<img src="' . get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg' . '" />';
-	echo $term->name;
-	echo $term->description;
-	echo get_term_link($term);
+	
+	echo '<p>' . $term->description . '</p>';
+	 
+	?>
+	 <p> <a href="<?php get_term_link($term)?>" class="btn"> <?php echo $term->slug . ' stuff' ?>
+	 </a>
+	 </p> 
+
+	 
+	<?php
+	echo '</div>';
  }
 
 		   ?>
+</div>		   
+
 </section>
 
 
