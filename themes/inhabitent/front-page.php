@@ -78,14 +78,14 @@ wp_reset_postdata();
 	<img src=<?php the_post_thumbnail() ?>
 	<p> <?php echo get_the_date() . ' / ';
 	 comments_number() ?> </p>
- 	  <h2><?php the_title(); ?></h2>
+ 	  <h3><?php the_title(); ?></h3>
 	  
 	  <a href="' . get_the_permalink() . '">Read Entry</a>
    <?php endwhile; ?>
    <!-- <?php the_posts_navigation(); ?> -->
    <?php wp_reset_postdata(); ?>
 <?php else : ?>
-      <h2>Nothing found!</h2>
+      <h3>Nothing found!</h3>
 <?php endif; ?>
 
 </section>

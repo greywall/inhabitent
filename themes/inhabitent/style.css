@@ -600,6 +600,15 @@ a {
   text-indent: 100%;
   white-space: nowrap; }
 
+.page-home h2 {
+  font-size: 2.4rem;
+  margin-bottom: 3.75rem;
+  text-align: center;
+  line-height: 1.2rem; }
+
+.page-home section {
+  margin-bottom: 4.5rem; }
+
 .hero-image-home {
   height: 100vh;
   width: 100%;

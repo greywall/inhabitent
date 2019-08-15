@@ -35,9 +35,18 @@ h1 {
 	text-indent: 100%;
 	white-space: nowrap;
 }
-
 }
 
+.page-home h2 {
+	font-size: 2.4rem;
+	margin-bottom: $base__space-unit * 2.5;
+	text-align: center;
+	line-height: 1.2rem;
+}
+
+.page-home section {
+	margin-bottom: $base__space-unit * 3;
+}
 
 .hero-image-home {
 	height: 100vh;
