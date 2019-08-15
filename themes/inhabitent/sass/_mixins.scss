@@ -12,7 +12,7 @@
 }
 
 
-@mixin display-flex-basic {
+@mixin display-flex-basic() {
 	display: flex;
 	width: 100%;
 	flex-direction: row;

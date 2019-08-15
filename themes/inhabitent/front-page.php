@@ -11,7 +11,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 	<section class="hero-image-home">
-	<img src="wp-content/themes/inhabitent/images/logos/inhabitent-logo-full.svg" alt="inhabitent-logo">	
+	<img class="hero-logo-home" src="wp-content/themes/inhabitent/images/logos/inhabitent-logo-full.svg" alt="inhabitent-logo">	
 	
 
 	</section>
