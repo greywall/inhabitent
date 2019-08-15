@@ -22,6 +22,21 @@
 
 .site-header {
 	position: absolute;
+	width: 100%;
+}
+
+.inner-header {
+	display: flex;
+	justify-content: start;
+	
+}
+
+.search-form {
+label {
+		display: none;
+		float: left;
+		margin: 0;
+	 }
 }
 
 .logo {
@@ -85,9 +100,14 @@ h1 {
 	display: none;
 }
 
-.site-header, .footer-content .info-hours {
-	@include display-flex-basic;	
+
+
+.all-product-types {
+	@include display-flex-basic;
+	justify-content: space-between;
+	text-align: center;
 }
+
 
 .container {
 	width: $container-width;
@@ -100,7 +120,13 @@ h1 {
 
 
 .footer-content {
-	@include display-flex-basic;
+	display: flex;
+	flex-direction: row;;
+}
+
+.info-hours {
+	display: flex;
+	flex-direction: row;
 }
 
 .hero-image-header {

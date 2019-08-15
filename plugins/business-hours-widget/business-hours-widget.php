@@ -6,19 +6,19 @@
  *
  * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
  *
- * @package   TG Business Hours
+ * @package   TG_Business_Hours
  * @author    T Grewal <talwindergrewal01@gmail.com>
  * @license   GPL-2.0+
  * @link      http://example.com
- * @copyright 2019 Your Name or Company Name
+ * @copyright 2019 TG Inhabitent Inc.
  *
  * @wordpress-plugin
- * Plugin Name:       @TODO
- * Plugin URI:        @TODO
- * Description:       @TODO
+ * Plugin Name:       Inhabitent Business Hours
+ * Plugin URI:        http://github.com/greywall
+ * Description:       First Widget created to display business hours
  * Version:           1.0.0
- * Author:            @TODO
- * Author URI:        @TODO
+ * Author:            T Grewal
+ * Author URI:        http://github.com/greywall
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
@@ -29,7 +29,7 @@ if ( ! defined ( 'ABSPATH' ) ) {
 }
 
 // TODO: change 'Widget_Name' to the name of your plugin
-class Widget_Name extends WP_Widget {
+class TG_Business_Hours extends WP_Widget {
 
     /**
      * @TODO - Rename "widget-name" to the name your your widget
@@ -40,7 +40,7 @@ class Widget_Name extends WP_Widget {
      *
      * @var      string
      */
-    protected $widget_slug = 'widget-name';
+    protected $widget_slug = 'TG_Business_Hours';
 
 	/*--------------------------------------------------*/
 	/* Constructor
@@ -51,13 +51,16 @@ class Widget_Name extends WP_Widget {
 	 */
 	public function __construct() {
 
+
+	
+
 		// TODO: update description
 		parent::__construct(
 			$this->get_widget_slug(),
-			'Widget Name',
+			'Inhabitent Business Hours',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
-				'description' => 'Short description of the widget goes here.'
+				'description' => 'Add the store business hours.'
 			)
 		);
 
@@ -86,6 +89,10 @@ class Widget_Name extends WP_Widget {
 	 */
 	public function widget( $args, $instance ) {
 
+			// var_dump($args);
+
+
+
 		if ( ! isset ( $args['widget_id'] ) ) {
          $args['widget_id'] = $this->id;
       }
@@ -98,6 +105,9 @@ class Widget_Name extends WP_Widget {
 
 		// Manipulate the widget's values based on their input fields
 		$title = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
+		$monday_friday = empty( $instance['monday_friday'] ) ? '' : apply_filters( 'monday_friday', $instance['monday_friday'] );
+		$saturday = empty( $instance['saturday'] ) ? '' : apply_filters( 'saturday', $instance['saturday'] );
+		$sunday = empty( $instance['sunday'] ) ? '' : apply_filters( 'sunday', $instance['sunday'] );
 		// TODO: other fields go here...
 
 		ob_start();
@@ -127,6 +137,9 @@ class Widget_Name extends WP_Widget {
 		$instance = $old_instance;
 
 		$instance['title'] = strip_tags( $new_instance['title'] );
+		$instance['monday_friday'] = strip_tags( $new_instance['monday_friday'] );
+		$instance['saturday'] = strip_tags( $new_instance['saturday'] );
+		$instance['sunday'] = strip_tags( $new_instance['sunday'] );
 		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
 
 		return $instance;
@@ -144,11 +157,18 @@ class Widget_Name extends WP_Widget {
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
-				'title' => 'My Widget Title',
+				'title' => 'Business Hours',
+				'monday_friday' => "",
+				'saturday' => "",
+				'sunday' => "",
 			)
 		);
 
 		$title = strip_tags( $instance['title'] );
+		$monday_friday = strip_tags( $instance['monday_friday'] );
+		$saturday = strip_tags( $instance['saturday'] );
+		$sunday = strip_tags( $instance['sunday'] );
+
 		// TODO: Store the rest of values of the widget in their own variables
 
 		// Display the admin form
@@ -160,5 +180,5 @@ class Widget_Name extends WP_Widget {
 
 // TODO: Remember to change 'Widget_Name' to match the class name definition
 add_action( 'widgets_init', function(){
-     register_widget( 'Widget_Name' );
+     register_widget( 'TG_Business_Hours' );
 });

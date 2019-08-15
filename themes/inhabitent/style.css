@@ -589,7 +589,21 @@ a {
   position: relative; }
 
 .site-header {
-  position: absolute; }
+  position: absolute;
+  width: 100%; }
+
+.inner-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start; }
+
+.search-form label {
+  display: none;
+  float: left;
+  margin: 0; }
 
 .logo h1 {
   background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
@@ -637,7 +651,7 @@ a {
 .site-description {
   display: none; }
 
-.site-header, .footer-content .info-hours {
+.all-product-types {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -645,7 +659,11 @@ a {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center; }
 
 .container {
   width: 1120px;
@@ -658,7 +676,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.info-hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
