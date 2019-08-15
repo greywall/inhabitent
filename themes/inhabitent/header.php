@@ -28,6 +28,8 @@
 				<div class="logo">
 					<a href="http://localhost:8888/inhabitent/" rel="home">
 					<h1 class="site-logo">Inhabitent</h1>
+					</a>
+				</div>	
 
 				</div><!-- .site-branding -->
 
