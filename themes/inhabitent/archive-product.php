@@ -10,11 +10,14 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<h2>Shop Stuff</h2>
+		
+
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					// the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
@@ -24,6 +27,15 @@ get_header(); ?>
 
 				<?php
 					get_template_part( 'template-parts/content' );
+
+
+					echo get_the_permalink(); 
+					?> <img class="wp-post-image" src=<?php the_post_thumbnail() ; ?>
+					<?php the_title();
+					
+					
+					echo CFS()->get( 'product_price' );
+
 				?>
 
 			<?php endwhile; ?>
@@ -39,5 +51,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
