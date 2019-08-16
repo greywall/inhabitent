@@ -614,11 +614,15 @@ a {
 
 .wp-post-image {
   left: 50%;
-  max-height: 250px;
-  max-width: none;
-  width: auto;
-  width: 360px;
-  height: 250px; }
+  max-height: 100%;
+  width: auto; }
+
+.journal-holder {
+  border: 1px solid #f1f1f1;
+  margin: 0 px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 31%;
+          flex: 0 1 31%; }
 
 .journal-content {
   display: -webkit-box;
@@ -627,9 +631,12 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
   margin-bottom: 0;
   margin-left: 0;
-  padding-left: 0; }
+  padding-left: 0px;
+  width: 100%; }
 
 .journal-block {
   border: 1px solid #f1f1f1; }
