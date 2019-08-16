@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
@@ -604,6 +605,21 @@ a {
   display: none;
   float: left;
   margin: 0; }
+
+.thumbnail-wrapper {
+   position: relative;
+   background-color: #f1f1f1;
+   height: 250px;
+   overflow: hidden; }
+
+.wp-post-image {
+   position: absolute;
+   left: 50%;
+   max-height: 250px;
+   max-width: none;
+   top: 50%;
+   width: auto;
+   transform: translate(-50%, 52%); }
 
 .logo h1 {
   background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;

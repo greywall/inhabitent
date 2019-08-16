@@ -41,12 +41,6 @@ function inhabitent_tax_product_type() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
         'show_in_rest'               => true,
-        'template_lock'              => 'all',
-        'template'                   => array(
-            array('core/paragraph', array(
-                'placeholder' => 'Add the product description here.'
-            )),
-        )
 	);
 	register_taxonomy( 'product-type', array( 'product' ), $args );
 

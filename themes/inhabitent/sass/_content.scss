@@ -39,9 +39,24 @@ label {
 	 }
 }
 
-.journal-content {
-	
 
+
+.thumbnail-wrapper {
+ position: relative;
+ background-color: $color__background-screen;
+ height: 250px;
+ overflow: hidden;
+}
+
+
+.wp-post-image {
+ position: absolute;
+ left: 50%;
+ max-height: 250px;
+ max-width: none;
+ top: 50%;
+ width: auto;
+ transform: translate(-50%,52%);
 }
 
 

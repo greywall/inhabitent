@@ -67,6 +67,7 @@ $args = array (
 	'numberposts' => '3',
 	'posts_per_page' => '3',
 );
+
 //The code below is not used but is kept for reference.
 // global $post;
 // $query = get_posts($args);
@@ -87,12 +88,16 @@ $args = array (
 	<div>	
 
 	<div class="thumbnail-wrapper">
-   <img src=<?php the_post_thumbnail() ?>
+   <img class="wp-post-image" src=<?php the_post_thumbnail() ; ?>
 	</div>
 
-	<div class="post-info-wrapper">
-	<p> <?php echo get_the_date() . ' / ';
-	 comments_number() ?> </p>
+	<div class="entry-meta post-info-wrapper">
+	<p> 
+		
+		<?php echo get_the_date() . ' / ';
+	 comments_number() ; ?> 
+	 
+	</p>
 
 
 	   <h3 class="entry-title">
