@@ -56,26 +56,27 @@ foreach ( $terms as $term ) {
 
 
 
-<section class="container">
-<h2>INHABITENT JOURNAL</h2>
-<?php
+<section class="latest-entries">
+<div class="container">
 
+<h2>INHABITENT JOURNAL</h2>
+<div class="journal-content">
+<?php
 $args = array ( 
 	'post_type' => 'post',
 	'numberposts' => '3',
 	'posts_per_page' => '3',
 );
-global $post;
-$query = get_posts($args);
+//The code below is not used but is kept for reference.
+// global $post;
+// $query = get_posts($args);
 
-foreach ($query as $post) {
-	setup_postdata($post);
-	the_title();
-	echo'<br><a href="' . get_the_permalink() . '">Read More</a><br>';
-	
-}
-
-wp_reset_postdata();
+// foreach ($query as $post) {
+// 	setup_postdata($post);
+// 	the_title();
+// 	echo'<br><a href="' . get_the_permalink() . '">Read More</a><br>';	
+// }
+// wp_reset_postdata(); 
 ?>
 
 
@@ -83,19 +84,33 @@ wp_reset_postdata();
 <?php $journal_query = new WP_Query( $args ); /* $args set above*/ ?>
 <?php if ( $journal_query->have_posts() ) : ?>
    <?php while ( $journal_query->have_posts() ) : $journal_query->the_post(); ?>
-	<img src=<?php the_post_thumbnail() ?>
+	<div>	
+
+	<div class="thumbnail-wrapper">
+   <img src=<?php the_post_thumbnail() ?>
+	</div>
+
+	<div class="post-info-wrapper">
 	<p> <?php echo get_the_date() . ' / ';
 	 comments_number() ?> </p>
- 	  <h3><?php the_title(); ?></h3>
+
+
+	   <h3 class="entry-title">
+		   <a href="<?php get_the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+		</h3>
+
+	</div>
 	  
-	  <a href="' . get_the_permalink() . '">Read Entry</a>
+	  <a class="black-btn" href=" <?php get_the_permalink() ?> ">Read Entry</a>
+</div> 
    <?php endwhile; ?>
-   <!-- <?php the_posts_navigation(); ?> -->
+   <?php the_posts_navigation(); ?>
    <?php wp_reset_postdata(); ?>
 <?php else : ?>
       <h3>Nothing found!</h3>
 <?php endif; ?>
-
+</div>
+</div>
 </section>
 
 
