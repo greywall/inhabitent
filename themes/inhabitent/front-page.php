@@ -67,17 +67,6 @@ $args = array (
 	'numberposts' => '3',
 	'posts_per_page' => '3',
 );
-
-//The code below is not used but is kept for reference.
-// global $post;
-// $query = get_posts($args);
-
-// foreach ($query as $post) {
-// 	setup_postdata($post);
-// 	the_title();
-// 	echo'<br><a href="' . get_the_permalink() . '">Read More</a><br>';	
-// }
-// wp_reset_postdata(); 
 ?>
 
 
@@ -109,7 +98,9 @@ $args = array (
 	</div> <!-- #end of div class post-infowrapper -->
 	  
 	  <a class="black-btn" href=" <?php get_the_permalink() ?> ">Read Entry</a>
-</div>  <!-- #end of div class journal-holder -->
+
+	 <!-- #end of div class journal-block -->
+	</div>  <!-- #end of div class journal-holder -->
    <?php endwhile; ?>
    <?php the_posts_navigation(); ?>
    <?php wp_reset_postdata(); ?>
