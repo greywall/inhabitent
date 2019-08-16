@@ -40,7 +40,8 @@
 					</div>	
 
 					<div class="footer-logo">
-						<img src="wp-content/themes/inhabitent/images/logos/inhabitent-logo-text.svg" alt="logo">
+						<img src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-text.svg" alt="logo"/>
+						
 					</div>
 					</div>
 					<div class="copyright-info">

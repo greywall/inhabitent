@@ -615,14 +615,15 @@ a {
 .wp-post-image {
   left: 50%;
   max-height: 100%;
+  height: 250px;
   width: auto; }
 
 .journal-holder {
   border: 1px solid #f1f1f1;
   margin: 0 px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 31%;
-          flex: 0 1 31%; }
+      -ms-flex: 0 1 32%;
+          flex: 0 1 32%; }
 
 .journal-content {
   display: -webkit-box;
@@ -639,7 +640,8 @@ a {
   width: 100%; }
 
 .journal-block {
-  border: 1px solid #f1f1f1; }
+  border: 1px solid #f1f1f1;
+  border-bottom: 5px solid #f1f1f1; }
 
 .logo h1 {
   background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
@@ -679,7 +681,12 @@ a {
   display: none; }
 
 .site-footer {
-  background: url("../../images/dark-wood.png"); }
+  background: url("../../images/dark-wood.png");
+  color: #fff; }
+  .site-footer a {
+    text-decoration: none; }
+    .site-footer a:hover {
+      text-decoration: underline; }
 
 .site-info {
   display: none; }
