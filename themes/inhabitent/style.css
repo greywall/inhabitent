@@ -621,6 +621,17 @@ a {
    width: auto;
    transform: translate(-50%, 52%); }
 
+.journal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0; }
+
 .logo h1 {
   background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
   background-size: 50px 33px;

@@ -38,7 +38,7 @@ foreach ( $terms as $term ) {
 	echo '<p>' . $term->description . '</p>';
 	 
 	?>
-	 <p> <a href="<?php get_term_link($term)?>" class="btn"> <?php echo $term->slug . ' stuff' ?>
+	 <p> <a href="<?php echo get_term_link($term)?>" class="btn"> <?php echo $term->slug . ' stuff' ?>
 	 </a>
 	 </p> 
 
@@ -85,11 +85,13 @@ $args = array (
 <?php $journal_query = new WP_Query( $args ); /* $args set above*/ ?>
 <?php if ( $journal_query->have_posts() ) : ?>
    <?php while ( $journal_query->have_posts() ) : $journal_query->the_post(); ?>
-	<div>	
-
+	<div class="journal-holder">	
+	
+	<div class="journal-block"
+	
 	<div class="thumbnail-wrapper">
    <img class="wp-post-image" src=<?php the_post_thumbnail() ; ?>
-	</div>
+	</div> <!-- #end of div class thumbnail-wrapper -->
 
 	<div class="entry-meta post-info-wrapper">
 	<p> 
@@ -104,43 +106,22 @@ $args = array (
 		   <a href="<?php get_the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 		</h3>
 
-	</div>
+	</div> <!-- #end of div class post-infowrapper -->
 	  
 	  <a class="black-btn" href=" <?php get_the_permalink() ?> ">Read Entry</a>
-</div> 
+</div>  <!-- #end of div class journal-holder -->
    <?php endwhile; ?>
    <?php the_posts_navigation(); ?>
    <?php wp_reset_postdata(); ?>
 <?php else : ?>
       <h3>Nothing found!</h3>
 <?php endif; ?>
-</div>
-</div>
-</section>
+</div> <!-- #end of div class journal-content -->
+</div> <!-- #end of div class container -->
+</section> <!-- #end of div class latest-enteries -->
 
 
-		<?php if ( have_posts() ) : ?>
-
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content' ); ?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
+		
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
