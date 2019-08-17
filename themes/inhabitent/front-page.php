@@ -59,7 +59,7 @@ foreach ( $terms as $term ) {
 <section class="latest-entries">
 <div class="container">
 
-<h2>INHABITENT JOURNAL</h2>
+<h2>Inhabitent Journal</h2>
 <div class="journal-content">
 <?php
 $args = array ( 
