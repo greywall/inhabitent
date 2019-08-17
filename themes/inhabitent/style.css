@@ -706,6 +706,39 @@ a {
   text-transform: uppercase;
   font-weight: 400; }
 
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .footer-content h3 {
+    color: #d99054;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .footer-content p {
+    margin-bottom: 0.5rem; }
+  .footer-content i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem; }
+  .footer-content .timeperiod {
+    font-weight: bold; }
+
+.logo-block {
+  width: 50%;
+  text-align: right; }
+
+img {
+  width: 50%;
+  margin-top: 1rem; }
+
+.contact-info, .business-hours {
+  width: 50%; }
+
 .page-home section {
   margin-bottom: 4.5rem; }
 
@@ -763,15 +796,6 @@ a {
 .copyright-info {
   text-align: center; }
 
-.footer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-
 .info-hours {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -779,7 +803,8 @@ a {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  width: 50%; }
 
 .hero-image-header {
   width: 100%;
