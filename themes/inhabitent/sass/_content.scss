@@ -83,7 +83,7 @@ label {
 
 .product-type-holder {
 	padding: .75rem;
-	border: 1px solid $color__background-screen;
+	border: 1px solid $color_border-grey;
 	border-top-width: 5px;
 	max-width: 23.5%;
 	flex-shrink: 1;
@@ -94,7 +94,7 @@ label {
 
 .thumbnail-wrapper {
  position: relative;
- background-color: $color__background-screen;
+ background-color: $color_border-grey;
  height: 250px;
  overflow: hidden;
 }
@@ -114,7 +114,7 @@ label {
 }
 
 .journal-holder {
-	border: 1px solid $color__background-screen ;
+	border: 1px solid $color_border-grey ;
 	margin: 0 px;
 	flex: 0 1 32%;
 	
@@ -132,8 +132,8 @@ label {
 }
 
 .journal-block {
-	border: 1px solid $color__background-screen ;
-	border-bottom: 5px solid $color__background-screen;
+	border: 1px solid $color_border-grey ;
+	border-bottom: 5px solid $color_border-grey;
       
 }
 
