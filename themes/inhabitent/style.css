@@ -277,7 +277,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: Merriweather Web, serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -414,26 +414,21 @@ input[type="submit"] {
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase; }
-  .btn:hover,
+  .btn:hover, .btn:active, .btn:focus,
   button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  .btn:active, .btn:focus,
   button:active,
   button:focus,
+  input[type="button"]:hover,
   input[type="button"]:active,
   input[type="button"]:focus,
+  input[type="reset"]:hover,
   input[type="reset"]:active,
   input[type="reset"]:focus,
+  input[type="submit"]:hover,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+    background: #19625d;
+    color: white; }
 
 /* Fields */
 input[type="text"],
@@ -471,7 +466,7 @@ textarea {
 a {
   color: royalblue; }
   a:visited {
-    color: purple; }
+    color: none; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -506,12 +501,9 @@ a {
       .main-navigation ul ul ul {
         left: -999rem;
         top: 0; }
-      .main-navigation ul ul li {
-        padding-left: 1.5rem;
-        position: relative; }
-        .main-navigation ul ul li:hover > ul,
-        .main-navigation ul ul li.focus > ul {
-          left: 100%; }
+      .main-navigation ul ul li:hover > ul,
+      .main-navigation ul ul li.focus > ul {
+        left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
     .main-navigation ul li:hover > ul,
@@ -687,6 +679,8 @@ a {
   color: #fff;
   text-decoration: none;
   font-size: .9rem; }
+  .main-navigation a:hover {
+    color: #f0e4d1; }
 
 .header-search {
   padding-left: 1.5rem;

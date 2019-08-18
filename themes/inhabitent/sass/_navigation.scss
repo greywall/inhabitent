@@ -55,11 +55,7 @@ a {
 				top: 0;
 			}
 
-			li {
-				padding-left: $base__space-unit;
-				position: relative;
-				
-				
+			li {				
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
