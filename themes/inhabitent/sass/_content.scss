@@ -127,6 +127,12 @@ label {
 
 
 
+.black-btn {
+position: absolute;
+bottom: $base__space-unit / 2;
+left: $base__space-unit / 2;
+}
+
 
 .wp-post-image {
 	
@@ -143,7 +149,7 @@ label {
 	border: 1px solid $color_border-grey ;
 	margin: 0 px;
 	flex: 0 1 32%;
-	
+	position: relative;
 		
 }
 

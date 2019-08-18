@@ -395,7 +395,7 @@ table {
 # Forms
 --------------------------------------------------------------*/
 /* Buttons */
-.btn,
+.btn, .black-btn,
 button,
 input[type="button"],
 input[type="reset"],
@@ -414,7 +414,7 @@ input[type="submit"] {
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase; }
-  .btn:hover, .btn:active, .btn:focus,
+  .btn:hover, .black-btn:hover, .btn:active, .black-btn:active, .btn:focus, .black-btn:focus,
   button:hover,
   button:active,
   button:focus,
@@ -429,6 +429,15 @@ input[type="submit"] {
   input[type="submit"]:focus {
     background: #19625d;
     color: white; }
+
+.black-btn {
+  background-color: transparent;
+  border: 1px solid #000000;
+  color: black; }
+  .black-btn:hover, .black-btn:active, .black-btn:focus {
+    background-color: #248A83;
+    border: #248A83;
+    color: #fff; }
 
 /* Fields */
 input[type="text"],
@@ -729,6 +738,11 @@ a {
    height: 250px;
    overflow: hidden; }
 
+.black-btn {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem; }
+
 .wp-post-image {
   left: 50%;
   max-height: 100%;
@@ -740,7 +754,8 @@ a {
   margin: 0 px;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 32%;
-          flex: 0 1 32%; }
+          flex: 0 1 32%;
+  position: relative; }
 
 .journal-content {
   display: -webkit-box;

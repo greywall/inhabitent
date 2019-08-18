@@ -32,6 +32,23 @@ input[type="submit"] {
 	}
 }
 
+.black-btn {
+	@extend .btn;
+	background-color: transparent;
+	border: 1px solid $colar__inhabitent-bordercolor;
+	color: black;
+	
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: $color__inhabitent-green;
+		border: $color__inhabitent-green;
+		color: $color__background-body;
+}
+}
+
+
+
 /* Fields */
 
 input[type="text"],
