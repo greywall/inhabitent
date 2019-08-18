@@ -156,7 +156,19 @@ img {
 	width: 50%;
 }
 
+.footer-content {
+	a, p {
 
+	
+	font-family: 'Merriweather Web', windings;
+	font-size: 1rem;
+	line-height: 1.7rem;
+		}
+	a {
+		color: $color__background-body;
+		text-decoration: none;
+	}
+}
 
 .page-home section {
 	margin-bottom: $base__space-unit * 3;
@@ -198,9 +210,7 @@ a {
 }
 }
 
-.site-info  {
-	display: none;
-}
+
 
 .site-description {
 	display: none;
@@ -222,6 +232,8 @@ a {
 
 .copyright-info {
 	text-align: center;
+	
+	padding: $base__space-unit 0;
 }
 
 

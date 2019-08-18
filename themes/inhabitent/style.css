@@ -739,6 +739,15 @@ img {
 .contact-info, .business-hours {
   width: 50%; }
 
+.footer-content a, .footer-content p {
+  font-family: 'Merriweather Web', windings;
+  font-size: 1rem;
+  line-height: 1.7rem; }
+
+.footer-content a {
+  color: #fff;
+  text-decoration: none; }
+
 .page-home section {
   margin-bottom: 4.5rem; }
 
@@ -769,9 +778,6 @@ img {
     .site-footer a:hover {
       text-decoration: underline; }
 
-.site-info {
-  display: none; }
-
 .site-description {
   display: none; }
 
@@ -794,7 +800,8 @@ img {
   margin: 0 auto; }
 
 .copyright-info {
-  text-align: center; }
+  text-align: center;
+  padding: 1.5rem 0; }
 
 .info-hours {
   display: -webkit-box;

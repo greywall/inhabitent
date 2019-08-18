@@ -32,9 +32,9 @@
 
 							<div class="business-hours">
 								<h3><span class="strong">Business Hours<span></h3>
-								<p><span class="timeperiod">Monday-Friday:</span>9am to 5pm</p>
-								<p><span class="timeperiod">Saturday:</span>10am to 2pm</p>
-								<p><span class="timeperiod">Sunday:</span>Closed</p>	
+								<p><span class="timeperiod">Monday-Friday: </span>9am to 5pm</p>
+								<p><span class="timeperiod">Saturday: </span>10am to 2pm</p>
+								<p><span class="timeperiod">Sunday: </span>Closed</p>	
 							</div> <!-- End of Div class Business Hours-->					
 
 						</div>	<!-- End of Div class info-hours -->
@@ -51,8 +51,9 @@
 					
 					
 					<div class="copyright-info">
+						<div class="container">
 						<p>COPYRIGHT © 2019 INHABITENT</p>
-					
+						=</div>
 					</div> <!-- End of Div class copyright info-->
 				
 					
