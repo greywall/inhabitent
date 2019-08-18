@@ -476,9 +476,10 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -633,20 +634,37 @@ a {
 
 .site-header {
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  padding: .5rem 0 .5rem 0; }
 
 .inner-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .search-form label {
   display: none;
-  float: left;
   margin: 0; }
+
+.site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: left; }
 
 .thumbnail-wrapper {
    position: relative;
@@ -692,7 +710,8 @@ a {
   width: 50px;
   overflow: hidden;
   text-indent: 100%;
-  white-space: nowrap; }
+  white-space: nowrap;
+  margin: 0; }
 
 .page-home h2 {
   font-size: 2.4rem;

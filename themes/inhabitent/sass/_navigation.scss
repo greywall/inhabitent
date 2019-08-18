@@ -28,9 +28,9 @@ a {
 
 .main-navigation {
 	clear: both;
-	display: block;
+	display: flex;
 	float: left;
-	width: 100%;
+	
 
 	ul {
 		display: none;
