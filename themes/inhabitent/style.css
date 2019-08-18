@@ -701,6 +701,8 @@ a {
       flex-shrink: 1;
   -ms-flex-preferred-size: 23.5%;
       flex-basis: 23.5%; }
+  .product-type-holder:hover {
+    border-color: #d99054; }
 
 .thumbnail-wrapper {
    position: relative;
@@ -989,3 +991,14 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.product-type-holder {
+  padding: .75rem;
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  max-width: 23.5%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: 23.5%;
+      flex-basis: 23.5%; }
+  .product-type-holder:hover {
+    border-color: #d99054; }
