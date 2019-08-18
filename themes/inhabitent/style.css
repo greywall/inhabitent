@@ -688,6 +688,20 @@ a {
   .header-search label {
     display: none; }
 
+.all-product-types img {
+  height: 70px;
+  width: 70px; }
+
+.product-type-holder {
+  padding: .75rem;
+  border: 1px solid #f1f1f1;
+  border-top-width: 5px;
+  max-width: 23.5%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: 23.5%;
+      flex-basis: 23.5%; }
+
 .thumbnail-wrapper {
    position: relative;
    background-color: #f1f1f1;
