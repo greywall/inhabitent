@@ -53,7 +53,7 @@
 					<div class="copyright-info">
 						<div class="container">
 						<p>COPYRIGHT © 2019 INHABITENT</p>
-						=</div>
+						</div>
 					</div> <!-- End of Div class copyright info-->
 				
 					

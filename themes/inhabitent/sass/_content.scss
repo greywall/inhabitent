@@ -146,10 +146,15 @@ h1 {
 
 .footer-logo {
 	
-		}
+		
 img {
 	width: 50%;
 	margin-top: 1rem;
+}
+}
+
+.info-hours, .logo-block {
+	margin: ($base__space-unit * 2) 0;
 }
 
 .contact-info, .business-hours {
@@ -190,7 +195,7 @@ img {
 }
 
 .hero-logo-home {
-	
+	max-width: 100%;
 }
 
 .page-home {
@@ -232,7 +237,9 @@ a {
 
 .copyright-info {
 	text-align: center;
-	
+	p {
+		margin: 0;
+	}
 	padding: $base__space-unit 0;
 }
 

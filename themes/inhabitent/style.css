@@ -732,9 +732,12 @@ a {
   width: 50%;
   text-align: right; }
 
-img {
+.footer-logo img {
   width: 50%;
   margin-top: 1rem; }
+
+.info-hours, .logo-block {
+  margin: 3rem 0; }
 
 .contact-info, .business-hours {
   width: 50%; }
@@ -766,6 +769,9 @@ img {
   -ms-flex-line-pack: center;
       align-content: center;
   margin: 0; }
+
+.hero-logo-home {
+  max-width: 100%; }
 
 .page-home .widget-area {
   display: none; }
@@ -802,6 +808,8 @@ img {
 .copyright-info {
   text-align: center;
   padding: 1.5rem 0; }
+  .copyright-info p {
+    margin: 0; }
 
 .info-hours {
   display: -webkit-box;
