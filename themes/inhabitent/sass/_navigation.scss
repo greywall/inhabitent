@@ -6,14 +6,14 @@
 
 a {
 	color: $color__link;
+	text-decoration: none;
 
-	&:visited {
-		color: $color__link-visited;
-	}
+	
 	&:hover,
 	&:focus,
 	&:active {
 		color: $color__link-hover;
+		text-decoration: none;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -65,6 +65,7 @@ a {
 
 			a {
 				width: 200px;
+				
 			}
 
 			:hover > a,

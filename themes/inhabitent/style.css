@@ -464,11 +464,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
-  a:visited {
-    color: none; }
+  color: #248A83;
+  text-decoration: none; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: midnightblue;
+    text-decoration: none; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -703,6 +703,25 @@ a {
       flex-basis: 23.5%; }
   .product-type-holder:hover {
     border-color: #d99054; }
+
+.entry-title {
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin-bottom: 3.75rem;
+  margin-top: 0;
+  line-height: 1.25;
+  letter-spacing: 2px;
+  font-family: "Novecento Sans Web", Arial, Helvetica, sans-serif;
+  text-transform: uppercase; }
+
+.entry-meta p {
+  font-size: .75rem;
+  padding: 0;
+  margin: 0;
+  line-height: 1.75; }
+
+.post-info-wrapper {
+  padding: .75rem; }
 
 .thumbnail-wrapper {
    position: relative;

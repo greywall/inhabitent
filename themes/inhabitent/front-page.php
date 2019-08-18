@@ -56,60 +56,48 @@ foreach ( $terms as $term ) {
 
 
 
-<section class="latest-entries">
-<div class="container">
+		<section class="latest-entries">
+			<div class="container">
 
-<h2>Inhabitent Journal</h2>
-<div class="journal-content">
-<?php
-$args = array ( 
-	'post_type' => 'post',
-	'numberposts' => '3',
-	'posts_per_page' => '3',
-);
-?>
+				<h2>Inhabitent Journal</h2>
+				<div class="journal-content">
+					<?php
+						$args = array ( 
+							'post_type' => 'post',
+							'numberposts' => '3',
+							'posts_per_page' => '3',
+						);
+					?>
+					<?php $journal_query = new WP_Query( $args ); /* $args set above*/ ?>
+					<?php if ( $journal_query->have_posts() ) : ?>
+					<?php while ( $journal_query->have_posts() ) : $journal_query->the_post(); ?>
+				
+					<div class="journal-holder">
+					
+						<div class="thumbnail-wrapper">
+							<img class="wp-post-image" src=<?php the_post_thumbnail() ; ?>
+						</div> <!-- #end of div class thumbnail-wrapper -->
 
-
-
-<?php $journal_query = new WP_Query( $args ); /* $args set above*/ ?>
-<?php if ( $journal_query->have_posts() ) : ?>
-   <?php while ( $journal_query->have_posts() ) : $journal_query->the_post(); ?>
-	<div class="journal-holder">	
-	
-	<div class="journal-block"
-	
-	<div class="thumbnail-wrapper">
-   <img class="wp-post-image" src=<?php the_post_thumbnail() ; ?>
-	</div> <!-- #end of div class thumbnail-wrapper -->
-
-	<div class="entry-meta post-info-wrapper">
-	<p> 
-		
-		<?php echo get_the_date() . ' / ';
-	 comments_number() ; ?> 
-	 
-	</p>
-
-
-	   <h3 class="entry-title">
-		   <a href="<?php get_the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
-		</h3>
-
-	</div> <!-- #end of div class post-infowrapper -->
-	  
-	  <a class="black-btn" href=" <?php get_the_permalink() ?> ">Read Entry</a>
-
-	 <!-- #end of div class journal-block -->
-	</div>  <!-- #end of div class journal-holder -->
-   <?php endwhile; ?>
-   <?php the_posts_navigation(); ?>
-   <?php wp_reset_postdata(); ?>
-<?php else : ?>
-      <h3>Nothing found!</h3>
-<?php endif; ?>
-</div> <!-- #end of div class journal-content -->
-</div> <!-- #end of div class container -->
-</section> <!-- #end of div class latest-enteries -->
+						<div class="entry-meta post-info-wrapper">
+							<p> 
+								<?php echo get_the_date() . ' / ';
+							comments_number() ; ?> 
+							</p>
+							<h3 class="entry-title">
+								<a href="<?php get_the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+							</h3>
+						</div> <!-- #end of div class post-infowrapper -->
+						<a class="black-btn" href=" <?php get_the_permalink() ?> ">Read Entry</a>
+					</div>  <!-- #end of div class journal-holder -->
+						<?php endwhile; ?>
+						<?php the_posts_navigation(); ?>
+						<?php wp_reset_postdata(); ?>
+						<?php else : ?>
+							<h3>Nothing found!</h3>
+						<?php endif; ?>
+						</div> <!-- #end of div class journal-content -->
+			</div> <!-- #end of div class container -->
+		</section> <!-- #end of div class latest-enteries -->
 
 
 		
