@@ -30,6 +30,10 @@ a {
 	clear: both;
 	display: flex;
 	float: left;
+	font-family: Novecento Sans Web,sans-serif;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px $color__text-main;
+	line-height: 1.75rem;
 	
 
 	ul {
@@ -52,10 +56,15 @@ a {
 			}
 
 			li {
+				padding-left: $base__space-unit;
+				position: relative;
+				
+				
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
 				}
+				
 			}
 
 			a {
@@ -94,6 +103,9 @@ a {
 	.current_page_ancestor > a {
 	}
 }
+
+
+
 
 /* Small menu. */
 .menu-toggle,

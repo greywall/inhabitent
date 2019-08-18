@@ -48,6 +48,19 @@ label {
 	flex-direction: row;
 	text-align: left;
 	
+
+}
+
+
+.main-navigation {
+	li {
+	padding-left: $base__space-unit;
+	position: relative;
+	}
+}
+
+.header-search {
+	padding-left: $base__space-unit;
 }
 
 

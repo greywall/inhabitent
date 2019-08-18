@@ -479,7 +479,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  float: left; }
+  float: left;
+  font-family: Novecento Sans Web,sans-serif;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #404040;
+  line-height: 1.75rem; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -496,9 +500,12 @@ a {
       .main-navigation ul ul ul {
         left: -999rem;
         top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
+      .main-navigation ul ul li {
+        padding-left: 1.5rem;
+        position: relative; }
+        .main-navigation ul ul li:hover > ul,
+        .main-navigation ul ul li.focus > ul {
+          left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
     .main-navigation ul li:hover > ul,
@@ -665,6 +672,13 @@ a {
       -ms-flex-direction: row;
           flex-direction: row;
   text-align: left; }
+
+.main-navigation li {
+  padding-left: 1.5rem;
+  position: relative; }
+
+.header-search {
+  padding-left: 1.5rem; }
 
 .thumbnail-wrapper {
    position: relative;
