@@ -57,11 +57,25 @@ label {
 	padding-left: $base__space-unit;
 	position: relative;
 	}
+	a {
+	color: $color__background-body;
+	text-decoration: none;
+	font-size: .9rem;
+
+	}
 }
 
 .header-search {
 	padding-left: $base__space-unit;
+	
+	line-height: 1rem;
+	label {
+		display: none;
+	}
+	
 }
+
+
 
 
 .thumbnail-wrapper {

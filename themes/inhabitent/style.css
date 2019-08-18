@@ -677,8 +677,16 @@ a {
   padding-left: 1.5rem;
   position: relative; }
 
+.main-navigation a {
+  color: #fff;
+  text-decoration: none;
+  font-size: .9rem; }
+
 .header-search {
-  padding-left: 1.5rem; }
+  padding-left: 1.5rem;
+  line-height: 1rem; }
+  .header-search label {
+    display: none; }
 
 .thumbnail-wrapper {
    position: relative;
