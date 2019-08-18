@@ -7,9 +7,26 @@
 .page-find-us {
 .site-content {
 	display: flex;
-	width: 100%;
 	flex-direction: row;
+	width: $container-width;
+	margin: 0 auto;
+	padding-top: 50px;
 }
+.content-area {
+border-right: 1px solid $color_border-grey;
+padding-right: 5%;
+width: 73%;
+}
+
+.widget-area {
+padding-left: 5%;
+width: 27%;
+}
+
+.content-area, .widget-area {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	}
 }
 
 .strong {
@@ -378,6 +395,9 @@ a {
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+
+
+
 
 /* Asides */
 

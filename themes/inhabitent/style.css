@@ -634,11 +634,26 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  width: 1120px;
+  margin: 0 auto;
+  padding-top: 50px; }
+
+.page-find-us .content-area {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
+  width: 73%; }
+
+.page-find-us .widget-area {
+  padding-left: 5%;
+  width: 27%; }
+
+.page-find-us .content-area, .page-find-us .widget-area {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
 
 .strong {
   font-weight: bold; }
