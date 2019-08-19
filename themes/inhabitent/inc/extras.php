@@ -61,3 +61,18 @@ function the_url( $url ) {
     return get_bloginfo( 'url' );
 }
 add_filter( 'login_headerurl', 'the_url' );
+
+
+
+// Filter the Arcieve the Title
+
+add_filter ('get_the_archive_title','inhabitent_archive_title');
+
+function inhabitent_archive_title($title){
+	
+	if (is_tax('product-type')) {
+		$title = single_term_title("",false);
+	}
+	
+	return $title;
+} 

@@ -711,7 +711,6 @@ a {
           align-items: center; }
 
 .search-form label {
-  display: none;
   margin: 0; }
 
 .site-navigation {
@@ -738,8 +737,6 @@ a {
 .header-search {
   padding-left: 1.5rem;
   line-height: 1rem; }
-  .header-search label {
-    display: none; }
 
 .all-product-types img {
   height: 70px;

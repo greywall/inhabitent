@@ -1,19 +1,17 @@
 (function ($) {
 
+    $('.search-field').hide();
 
-    // TODO remove the body append
-    $('body').append('');
-    
-    $('.search-form').click(function (event) {
+    $('.icon-search').click(function (event) {
 
         // Don't follow the link
         event.preventDefault();
-    
-        // Log the clicked element in the console
-        console.log(event.target);
-    
+        
+        $('.search-field').show().focus();
     });
 
-
+    $('.search-field').on('blur', function(){
+        $('.search-field').hide();
+    });
 
 }) (jQuery);
