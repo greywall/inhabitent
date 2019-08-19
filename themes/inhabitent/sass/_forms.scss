@@ -60,6 +60,7 @@ textarea {
 	color: #666;
 	border: 1px solid #ccc;
 	border-radius: 3px;
+	background-color: $color__background-screen;
 
 	&:focus {
 		color: #111;
@@ -72,9 +73,22 @@ input[type="url"],
 input[type="password"],
 input[type="search"] {
 	padding: 3px;
+	width: 50%;
 }
 
 textarea {
 	padding-left: 3px;
-	width: 100%;
+	width: 50%;
+}
+
+form label {
+	text-transform: uppercase;
+	font-family: $font__secondary; 
+	margin-bottom: .5rem;
+	letter-spacing: 1px;
+}
+
+.required {
+	color: $color__inhabitent-primary;
+	font-size: 1.1rem;
 }
