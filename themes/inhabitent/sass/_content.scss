@@ -546,8 +546,8 @@ a {
 
 	.entry-header {
 	a {
-	color: $color__background-body !important;
-	background-color: $color__inhabitent-green !important;
+	color: $color__background-body;
+	
 	font-size: 2.1rem;
 	line-height: 1.2;
 	
@@ -560,12 +560,30 @@ a {
 	padding-left: 1.5rem;
 	margin-top: 2.25rem;
 	max-width: 75%;
-	background-color: $color__inhabitent-green !important;
+	background-color: $color__inhabitent-green;
 	}
+	}
+
+	.entry-meta {
+		background-color: $color__inhabitent-green;
+		bottom: 0px;
+		right: 0;
+		position: absolute;
+		padding-right: 1.5rem;
+		padding-bottom: 1rem;
+		padding-left: 1.5rem;
+		padding-top: 1rem;
+		color: $color__background-body;
+		text-transform: uppercase;
+		display: inline-block;
+		line-height: 0;
 	}
 
 	.hentry {
 		margin-bottom: 4.5rem;
+	}
+	.entry-content p {
+	margin-top: 1.5rem;	
 	}
 }
 
@@ -573,6 +591,7 @@ a {
 .blog {
 	.entry-header {
 		position: relative;
+		line-height: 0;
 	}
 	.entry-title {
 		position: absolute;

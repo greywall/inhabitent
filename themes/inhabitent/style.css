@@ -1084,8 +1084,7 @@ a {
   position: absolute; }
 
 .blog .entry-header a {
-  color: #fff !important;
-  background-color: #248A83 !important;
+  color: #fff;
   font-size: 2.1rem;
   line-height: 1.2; }
 
@@ -1096,13 +1095,31 @@ a {
   padding-left: 1.5rem;
   margin-top: 2.25rem;
   max-width: 75%;
-  background-color: #248A83 !important; }
+  background-color: #248A83; }
+
+.blog .entry-meta {
+  background-color: #248A83;
+  bottom: 0px;
+  right: 0;
+  position: absolute;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 0; }
 
 .blog .hentry {
   margin-bottom: 4.5rem; }
 
+.blog .entry-content p {
+  margin-top: 1.5rem; }
+
 .blog .entry-header {
-  position: relative; }
+  position: relative;
+  line-height: 0; }
 
 .blog .entry-title {
   position: absolute;
