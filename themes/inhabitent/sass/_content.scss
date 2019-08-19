@@ -268,14 +268,7 @@ h1 {
 	text-align: right;
 }
 
-.footer-logo {
-	
-		
-img {
-	width: 50%;
-	margin-top: 1rem;
-}
-}
+
 
 .info-hours, .logo-block {
 	margin: ($base__space-unit * 2) 0;
@@ -418,7 +411,7 @@ a {
 .page-about {
 	.site-content {
 		display: flex;
-		width: 100%;
+		// width: 100%;
 		flex-direction: row;
 	}
 	h1 {
@@ -457,14 +450,14 @@ a {
 	.site-content {
 	p {
 		text-align: left;
-		margin-left: 700px;
-		margin-right: 800px;
+		margin-left: 770px;
+		margin-right: 770px;
 			
 	}
 	h2 {
 		text-align: center;	
-		margin-left: 700px;
-		margin-right: 800px;
+		margin-left: 770px;
+		margin-right: 770px;
 		min-width: 800px;
 		font-size: 2.1rem;
 		line-height: 1.25;	
@@ -483,6 +476,17 @@ a {
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+
+// .page-template {
+// 	.site-content {
+// 		display: flex;
+// 		flex-direction: row;
+// 		width: $container-width;
+// 		margin: 0 auto;
+// 		padding-top: 50px;
+// 	}
+// }
+
 
 
 
@@ -505,3 +509,52 @@ a {
 
 
 
+
+
+
+
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.page-about):not(.page-find-us) {
+	.site-content {
+		display: flex;
+		max-width: 1120px;
+		margin: 0 auto;
+		padding-top: 50px;
+		
+		
+	}
+
+	.content-area {
+		border-right: 2px;
+		padding-right: 5%;
+		width: 73%;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+
+	.widget-area {
+		padding-left: 5%;
+		width: 27%;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+
+	}
+	.entry-header {
+	img {
+		height: auto;
+		width: 760px;
+
+	}
+	}
+	.hentry {
+		margin-bottom: 4.5rem;
+	}
+}
+
+
+.footer-logo {
+	img {
+		width: 50%;
+		margin-top: 1rem;
+	}
+	}

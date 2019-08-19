@@ -867,10 +867,6 @@ a {
   width: 50%;
   text-align: right; }
 
-.footer-logo img {
-  width: 50%;
-  margin-top: 1rem; }
-
 .info-hours, .logo-block {
   margin: 3rem 0; }
 
@@ -988,7 +984,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1021,13 +1016,13 @@ a {
 
 .page-about .site-content p {
   text-align: left;
-  margin-left: 700px;
-  margin-right: 800px; }
+  margin-left: 770px;
+  margin-right: 770px; }
 
 .page-about .site-content h2 {
   text-align: center;
-  margin-left: 700px;
-  margin-right: 800px;
+  margin-left: 770px;
+  margin-right: 770px;
   min-width: 800px;
   font-size: 2.1rem;
   line-height: 1.25;
@@ -1054,6 +1049,38 @@ a {
 
 .bypostauthor {
   display: block; }
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.page-about):not(.page-find-us) .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-top: 50px; }
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.page-about):not(.page-find-us) .content-area {
+  border-right: 2px;
+  padding-right: 5%;
+  width: 73%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.page-about):not(.page-find-us) .widget-area {
+  padding-left: 5%;
+  width: 27%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.page-about):not(.page-find-us) .entry-header img {
+  height: auto;
+  width: 760px; }
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.page-about):not(.page-find-us) .hentry {
+  margin-bottom: 4.5rem; }
+
+.footer-logo img {
+  width: 50%;
+  margin-top: 1rem; }
 
 /*--------------------------------------------------------------
 # Media
