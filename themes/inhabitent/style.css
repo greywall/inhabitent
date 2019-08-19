@@ -1015,15 +1015,10 @@ a {
   height: 100vh; }
 
 .page-about .site-content p {
-  text-align: left;
-  margin-left: 770px;
-  margin-right: 770px; }
+  text-align: left; }
 
 .page-about .site-content h2 {
   text-align: center;
-  margin-left: 770px;
-  margin-right: 770px;
-  min-width: 800px;
   font-size: 2.1rem;
   line-height: 1.25;
   letter-spacing: 2px;
@@ -1050,13 +1045,15 @@ a {
 .bypostauthor {
   display: block; }
 
-body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.page-about):not(.page-find-us) .site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 1120px;
+.containparagraph {
+  max-width: 800px;
   margin: 0 auto;
-  padding-top: 50px; }
+  margin-bottom: 1.5rem; }
+
+.page-about .content-area {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
 
 body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.page-about):not(.page-find-us) .content-area {
   border-right: 2px;
@@ -1072,11 +1069,30 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
   padding-bottom: 3rem; }
 
 body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.page-about):not(.page-find-us) .entry-header img {
-  height: auto;
-  width: 760px; }
+  height: auto; }
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.page-about):not(.page-find-us) .entry-title {
+  position: absolute;
+  padding-top: 0.75rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem; }
 
 body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.page-about):not(.page-find-us) .hentry {
   margin-bottom: 4.5rem; }
+
+.blog .entry-header {
+  position: relative; }
+
+.blog .entry-title {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.blog .entry-title,
+.single-post .entry-title,
+.archive:not(.tax-product-type):not(.post-type-archive) .entry-title {
+  position: relative; }
 
 .footer-logo img {
   width: 50%;
