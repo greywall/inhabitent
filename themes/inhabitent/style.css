@@ -671,7 +671,7 @@ a {
   margin-bottom: .5rem;
   font-size: 2.4rem; }
 
-.page-find-us h2 {
+.page-find-us .content-area h2 {
   font-family: "Novecento Sans Web", Arial, Helvetica, sans-serif;
   font-size: 2.1rem;
   letter-spacing: 2px;
@@ -906,6 +906,27 @@ a {
 
 .page-home .widget-area {
   display: none; }
+
+.widget-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  font-family: "Novecento Sans Web", Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  color: #000000; }
+
+.textwidget p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.textwidget i {
+  line-height: 1.8;
+  margin-right: .5rem;
+  width: 20px; }
+
+.day-of-week {
+  font-size: 1rem; }
 
 .site-footer {
   background: url("../../images/dark-wood.png");
