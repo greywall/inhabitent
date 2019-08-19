@@ -506,12 +506,12 @@ a {
 
 
 
-body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.page-about):not(.page-find-us) {
+.blog {
 	.site-content {
-		// display: flex;
-		// max-width: 1120px;
-		// margin: 0 auto;
-		// padding-top: 50px;		
+		display: flex;
+		max-width: 1120px;
+		margin: 0 auto;
+		padding-top: 50px;		
 		
 	}
 
@@ -533,17 +533,35 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
 	.entry-header {
 	img {
 		height: auto;
-		
+		width: 100%;
+	
 
 	}
+	
 	
 	}
 	.entry-title {
 	position: absolute;
+	}
+
+	.entry-header {
+	a {
+	color: $color__background-body !important;
+	background-color: $color__inhabitent-green !important;
+	font-size: 2.1rem;
+	line-height: 1.2;
+	
+	}
+
+	h2 {
 	padding-top: 0.75rem;
     padding-right: 1.5rem;
     padding-bottom: 0.75rem;
-    padding-left: 1.5rem;
+	padding-left: 1.5rem;
+	margin-top: 2.25rem;
+	max-width: 75%;
+	background-color: $color__inhabitent-green !important;
+	}
 	}
 
 	.hentry {
@@ -563,13 +581,11 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
 	}
 }
 
-.blog,
-.single-post,
-.archive:not(.tax-product-type):not(.post-type-archive) {
-	.entry-title {
-		position: relative;
-	}
-}
+
+
+
+
+
 
 .footer-logo {
 	img {
