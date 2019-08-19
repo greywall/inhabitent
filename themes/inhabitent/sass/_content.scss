@@ -142,11 +142,13 @@ label {
 	text-transform: uppercase;	
 }
 
+.page-home{
 .entry-meta p {
 	font-size: .75rem;
 	padding: 0;
 	margin: 0;
 	line-height: 1.75;
+}
 }
 
 
@@ -312,7 +314,7 @@ img {
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	margin: 0;
+	margin: 0 auto;
 	
 }
 
@@ -409,7 +411,7 @@ a {
 }
 
 .hero-image-header {
-	@include full-width-100-height;
+	
 	color: white;
 }
 
@@ -418,6 +420,9 @@ a {
 		display: flex;
 		width: 100%;
 		flex-direction: row;
+	}
+	h1 {
+		font-size: 3rem;
 	}
 	}
 
@@ -441,14 +446,43 @@ a {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: $base__space-unit 0 0;
+	margin: 0 0;
+}
+
+.page-about {
+	header {
+		margin-bottom: $base__space-unit * 2;
+		height: 100vh;
+	  }
+	.site-content {
+	p {
+		text-align: left;
+		margin-left: 700px;
+		margin-right: 800px;
+			
+	}
+	h2 {
+		text-align: center;	
+		margin-left: 700px;
+		margin-right: 800px;
+		min-width: 800px;
+		font-size: 2.1rem;
+		line-height: 1.25;	
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		font-family: $font__secondary;
+		color: $colar__inhabitent-bordercolor;
+	}
+}
+	.hentry {
+		margin-bottom: 4.5rem;
+	}
 }
 
 .page-links {
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
-
 
 
 
@@ -467,3 +501,7 @@ a {
 .bypostauthor {
 	display: block;
 }
+
+
+
+

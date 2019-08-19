@@ -7,18 +7,3 @@
 
 
 /* Front page */
-
-
-.product-type-holder {
-	padding: .75rem;
-	border: 1px solid $color_border-grey;
-	border-top-width: 5px;
-	max-width: 23.5%;
-	flex-shrink: 1;
-    flex-basis: 23.5%;
-    
-    &:hover {
-    border-color: $color__inhabitent-primary;
-    }
-
-}
