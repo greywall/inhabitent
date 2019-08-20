@@ -1,7 +1,7 @@
 # Inhabitent
 
-##Description
+## Description
 This project is a wordpress site built with a custom theme.
 
-#Support
+## Support
 Please open an issue for support.
