@@ -46,7 +46,7 @@ get_header(); ?>
 					<?php the_title(); ?>					
 					<span class="dots">..............................</span>
 					<span class="product-price">
-					<?php echo CFS()->get( 'product_price' ); ?>
+					<?php echo '$'; echo CFS()->get( 'product_price' ); echo '.00'; ?>
 					</span>	
 					</h2>		
 				</div>

@@ -12,19 +12,34 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-					
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-				?>
+			<header class="page-header">				
+					<div class="taxonomy-header-title">
+						<?php the_archive_title( '<h1 class="page-title">', '</h1>' );?>
+						<p class="taxonomy-category-description"> 
+							<?php echo term_description(); ?> 
+						</p>
+					</div>				
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+			<div class="product-grid">
+				<div class="thumbnail-wrapper">	
+					 <a href="<?php echo get_the_permalink(); ?>">
+						<?php the_post_thumbnail(); ?> 
+					</a>
+				</div>	
+				<div class="product-info">
+					<h2 class="product-title-name">
+					<?php the_title(); ?>					
+					<span class="dots">..............................</span>
+					<span class="product-price">
+					<?php echo '$'; echo CFS()->get( 'product_price' ); echo '.00'; ?>
+					</span>	
+					</h2>		
+				</div>
+			</div>	
 
 			<?php endwhile; ?>
 
