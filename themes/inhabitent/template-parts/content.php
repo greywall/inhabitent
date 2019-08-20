@@ -24,5 +24,12 @@
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
+
+		<p>
+            <a class="black-btn readmore" href="<?php echo get_permalink(); ?>">Read More →
+            </a>
+        </p>
+        </p>
+
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

@@ -105,6 +105,7 @@ label {
 
 .header-search {
 	padding-left: $base__space-unit;
+	padding-top: .33rem;
 	
 	line-height: 1rem;
 	label {
@@ -507,7 +508,7 @@ a {
 
 
 
-.blog {
+.archive, .blog, .single-post {
 	.site-content {
 		display: flex;
 		max-width: 1120px;
@@ -515,46 +516,61 @@ a {
 		padding-top: 50px;		
 		
 	}
+}
 
-	.content-area {
-		border-right: 2px;
+.archive, .blog, .single-post {
+		.content-area {
+		border-right: 2px !important;
+		border-width: 2px !important;
+		border-color: aqua;
 		padding-right: 5%;
 		width: 73%;
 		padding-top: 3rem;
 		padding-bottom: 3rem;
 	}
+}
 
+
+.archive, .blog, .single-post {
 	.widget-area {
 		padding-left: 5%;
 		width: 27%;
 		padding-top: 3rem;
 		padding-bottom: 3rem;
-
 	}
+}
+
+
+.archive, .blog, .single-post {
 	.entry-header {
 	img {
 		height: auto;
 		width: 100%;
-	
+	}
+	}	
+	}
 
-	}
 	
-	
-	}
+	.archive, .blog {	
 	.entry-title {
 	position: absolute;
 	}
+	}
 
+	.archive, .blog, {
 	.entry-header {
 	a {
 	color: $color__background-body;
 	
 	font-size: 2.1rem;
 	line-height: 1.2;
-	
 	}
+	}
+}
 
-	h2 {
+.archive, .blog, .single-post {
+	.type-post {
+	h2,h1 {
 	padding-top: 0.75rem;
     padding-right: 1.5rem;
     padding-bottom: 0.75rem;
@@ -564,7 +580,9 @@ a {
 	background-color: $color__inhabitent-green;
 	}
 	}
+}
 
+.archive, .blog, .single-post {
 	.entry-meta {
 		background-color: $color__inhabitent-green;
 		bottom: 0px;
@@ -579,7 +597,9 @@ a {
 		display: inline-block;
 		line-height: 0;
 	}
+	}
 
+	.archive, .blog, .single-post {
 	.hentry {
 		margin-bottom: 4.5rem;
 	}
@@ -589,7 +609,7 @@ a {
 }
 
 
-.blog {
+.archive, .blog, .single-post {
 	.entry-header {
 		position: relative;
 		line-height: 0;
@@ -601,11 +621,53 @@ a {
 	}
 }
 
+.single-post {
+	.comments-link {
+		color: $color__background-body;
+	a {
+	color: $color__background-body;
+	}
+	}
+	.nav-links {
+		display: none;
+	}
+}
 
+.single-post {
+.content-area {
+.comments-title {
+	h2 {
+	background-color: transparent;
+	font-size: 2.1rem;
+	color: $colar__inhabitent-bordercolor;
+	padding: none;
+	margin: none;
+	max-width: none;
+}
+}
+}
+}
 
+.single-post {
+	.entry-title {
+	color: $color__background-body;
+	font-size: 2.1rem;	
+	}
+}
 
-
-
+.archive {
+	.page-title {
+	margin-top: 0;
+	line-height: 1.25;
+	font-size: 2.4rem;
+	margin-bottom: 1.9rem;
+	font-family: $font__secondary;
+	text-transform: uppercase;
+	}
+	hr {
+	margin-bottom: 3rem;
+	}
+}
 
 .footer-logo {
 	img {

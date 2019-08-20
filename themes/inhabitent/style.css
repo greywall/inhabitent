@@ -736,6 +736,7 @@ a {
 
 .header-search {
   padding-left: 1.5rem;
+  padding-top: .33rem;
   line-height: 1rem; }
 
 .all-product-types img {
@@ -1052,7 +1053,7 @@ a {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
-.blog .site-content {
+.archive .site-content, .blog .site-content, .single-post .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1060,32 +1061,34 @@ a {
   margin: 0 auto;
   padding-top: 50px; }
 
-.blog .content-area {
-  border-right: 2px;
+.archive .content-area, .blog .content-area, .single-post .content-area {
+  border-right: 2px !important;
+  border-width: 2px !important;
+  border-color: aqua;
   padding-right: 5%;
   width: 73%;
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
-.blog .widget-area {
+.archive .widget-area, .blog .widget-area, .single-post .widget-area {
   padding-left: 5%;
   width: 27%;
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
-.blog .entry-header img {
+.archive .entry-header img, .blog .entry-header img, .single-post .entry-header img {
   height: auto;
   width: 100%; }
 
-.blog .entry-title {
+.archive .entry-title, .blog .entry-title {
   position: absolute; }
 
-.blog .entry-header a {
+.archive .entry-header a, .blog .entry-header a {
   color: #fff;
   font-size: 2.1rem;
   line-height: 1.2; }
 
-.blog .entry-header h2 {
+.archive .type-post h2, .archive .type-post h1, .blog .type-post h2, .blog .type-post h1, .single-post .type-post h2, .single-post .type-post h1 {
   padding-top: 0.75rem;
   padding-right: 1.5rem;
   padding-bottom: 0.75rem;
@@ -1094,7 +1097,7 @@ a {
   max-width: 75%;
   background-color: #248A83; }
 
-.blog .entry-meta {
+.archive .entry-meta, .blog .entry-meta, .single-post .entry-meta {
   background-color: #248A83;
   bottom: 0px;
   right: 0;
@@ -1108,20 +1111,51 @@ a {
   display: inline-block;
   line-height: 0; }
 
-.blog .hentry {
+.archive .hentry, .blog .hentry, .single-post .hentry {
   margin-bottom: 4.5rem; }
 
-.blog .entry-content p {
+.archive .entry-content p, .blog .entry-content p, .single-post .entry-content p {
   margin-top: 1.5rem; }
 
-.blog .entry-header {
+.archive .entry-header, .blog .entry-header, .single-post .entry-header {
   position: relative;
   line-height: 0; }
 
-.blog .entry-title {
+.archive .entry-title, .blog .entry-title, .single-post .entry-title {
   position: absolute;
   top: 0;
   left: 0; }
+
+.single-post .comments-link {
+  color: #fff; }
+  .single-post .comments-link a {
+    color: #fff; }
+
+.single-post .nav-links {
+  display: none; }
+
+.single-post .content-area .comments-title h2 {
+  background-color: transparent;
+  font-size: 2.1rem;
+  color: #000000;
+  padding: none;
+  margin: none;
+  max-width: none; }
+
+.single-post .entry-title {
+  color: #fff;
+  font-size: 2.1rem; }
+
+.archive .page-title {
+  margin-top: 0;
+  line-height: 1.25;
+  font-size: 2.4rem;
+  margin-bottom: 1.9rem;
+  font-family: "Novecento Sans Web", Arial, Helvetica, sans-serif;
+  text-transform: uppercase; }
+
+.archive hr {
+  margin-bottom: 3rem; }
 
 .footer-logo img {
   width: 50%;
