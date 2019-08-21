@@ -74,6 +74,7 @@ foreach ( $terms as $term ) {
 				
 					<div class="journal-holder">
 					
+						
 						<div class="thumbnail-wrapper">
 							<img class="wp-post-image" src=<?php the_post_thumbnail() ; ?>
 						</div> <!-- #end of div class thumbnail-wrapper -->
@@ -88,6 +89,8 @@ foreach ( $terms as $term ) {
 							</h3>
 						</div> <!-- #end of div class post-infowrapper -->
 						<a class="black-btn" href=" <?php get_the_permalink() ?> ">Read Entry</a>
+					
+					
 					</div>  <!-- #end of div class journal-holder -->
 						<?php endwhile; ?>
 						<?php the_posts_navigation(); ?>
@@ -99,9 +102,48 @@ foreach ( $terms as $term ) {
 			</div> <!-- #end of div class container -->
 		</section> <!-- #end of div class latest-enteries -->
 
-
+		<section class="adventures container">
+			<h2 class="entry-title">Latest Adventures</h2>
+			<div>
+				<div>
+					<div class="adventures-image-wrapper">	
+					<a href="#"><img class="adventures-block-images" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/canoe-girl.jpg' ?>"></a>
+					</div>
+					<div class="adventures-details">
+					<h2>Getting Back to Nature in a Canoe</h2>
+					<a class="black-btn" href="#">Read Entry</a>
+					</div>
+				</div>		
+				<div>
+					<div class="adventures-image-wrapper">	
+					<a href="#"><img class="adventures-block-images" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/beach-bonfire.jpg' ?>"></a>
+					</div>
+					<div class="adventures-details">
+					<h2>A Night with friends at the Beach</h2>
+					<a class="black-btn" href="#">Read Entry</a>
+					</div>
+				</div>	
+				<div>
+					<div class="adventures-image-wrapper">	
+					<a href="#"><img class="adventures-block-images" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/mountain-hikers.jpg' ?>"></a>
+					</div>
+					<div class="adventures-details">
+					<h2>Taking in the view at Big Mountain</h2>
+					<p><a class="black-btn" href="#">Read Entry</a>
+					</div>
+				</div>	
+				<div>	
+					<div class="adventures-image-wrapper">	
+					<a href="#"><img class="adventures-block-images" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/night-sky.jpg' ?>"></a>
+					</div>
+					<div class="adventures-details">
+					<h2>Star-Gazing at the Night Sky</h2>
+					<a class="black-btn" href="#">Read Entry</a>
+					</div>
+				</div>	
+			</div>		
 		
-
+		</section>				
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
