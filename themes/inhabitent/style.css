@@ -398,7 +398,7 @@ table {
 # Forms
 --------------------------------------------------------------*/
 /* Buttons */
-.btn, .black-btn,
+.btn, .black-btn, .third-button,
 button,
 input[type="button"],
 input[type="reset"],
@@ -417,7 +417,7 @@ input[type="submit"] {
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase; }
-  .btn:hover, .black-btn:hover, .btn:active, .black-btn:active, .btn:focus, .black-btn:focus,
+  .btn:hover, .black-btn:hover, .third-button:hover, .btn:active, .black-btn:active, .third-button:active, .btn:focus, .black-btn:focus, .third-button:focus,
   button:hover,
   button:active,
   button:focus,
@@ -433,11 +433,11 @@ input[type="submit"] {
     background: #19625d;
     color: white; }
 
-.black-btn {
+.black-btn, .third-button {
   background-color: transparent;
   border: 1px solid #000000;
   color: black; }
-  .black-btn:hover, .black-btn:active, .black-btn:focus {
+  .black-btn:hover, .third-button:hover, .black-btn:active, .third-button:active, .black-btn:focus, .third-button:focus {
     background-color: #248A83;
     border: #248A83;
     color: #fff; }
@@ -780,7 +780,7 @@ a {
    height: 250px;
    overflow: hidden; }
 
-.page-home .black-btn {
+.page-home .black-btn, .page-home .third-button {
   position: absolute;
   bottom: 0.75rem;
   left: 0.75rem; }
@@ -1161,6 +1161,12 @@ a {
   width: 50%;
   margin-top: 1rem; }
 
+.see-more-block .see-more a {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: .75rem 1rem; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -1225,3 +1231,89 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/* Adventures Section */
+.third-button {
+  color: #fff;
+  border-color: #fff;
+  line-height: 1.25rem; }
+
+.page-home .adventures .adventures-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px 20px; }
+
+.page-home .adventures .adventures-block-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1.5rem; }
+
+.page-home .adventures .adventures-image-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+.page-home .adventures .adventures-details {
+  position: absolute;
+  margin: 1.5rem; }
+  .page-home .adventures .adventures-details h2 a {
+    color: white; }
+    .page-home .adventures .adventures-details h2 a:hover {
+      color: #f0e4d1; }
+
+.page-home .canoe-girl {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/canoe-girl.jpg) no-repeat center top 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0.3) 100%), url(../../images/adventure-photos/canoe-girl.jpg) no-repeat center top 100%;
+  background-size: cover, cover; }
+  .page-home .canoe-girl h2 {
+    font-size: 3rem; }
+
+.page-home .night-beach {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat center top 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0.3) 100%), url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat center top 100%;
+  background-size: cover, cover; }
+  .page-home .night-beach h2 {
+    font-size: 2.4rem; }
+
+.page-home .big-mountain {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat center top 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0.3) 100%), url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat center top 100%;
+  background-size: cover, cover; }
+  .page-home .big-mountain h2 {
+    font-size: 1.6rem; }
+
+.page-home .night-sky {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/night-sky.jpg) no-repeat center top 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0.3) 100%), url(../../images/adventure-photos/night-sky.jpg) no-repeat center top 100%;
+  background-size: cover, cover; }
+  .page-home .night-sky h2 {
+    font-size: 1.6rem; }
+
+.page-home .adventures-details h2 {
+  color: #fff;
+  line-height: 1.25;
+  text-align: left;
+  font-family: Merriweather Web, serif;
+  text-transform: none; }
+
+.page-home .adventures-details a {
+  left: 0; }
+
+.adventures .adventures-block {
+  position: relative; }
+  .adventures .adventures-block::before {
+    display: block;
+    content: ' '; }
+  .adventures .adventures-block:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2; }
+    .adventures .adventures-block:first-child::before {
+      padding-bottom: calc(100% - 24px); }
+  .adventures .adventures-block:nth-child(2) {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1; }
+
+.contact-info h3, .business-hours h3 {
+  font-family: "Novecento Sans Web", Arial, Helvetica, sans-serif; }

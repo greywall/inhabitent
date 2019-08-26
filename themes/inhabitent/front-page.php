@@ -104,44 +104,69 @@ foreach ( $terms as $term ) {
 
 		<section class="adventures container">
 			<h2 class="entry-title">Latest Adventures</h2>
-			<div>
-				<div>
-					<div class="adventures-image-wrapper">	
-					<a href="#"><img class="adventures-block-images" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/canoe-girl.jpg' ?>"></a>
+			<div class="adventures-content">
+				
+			<div class="adventures-block canoe-girl-block">
+					<div class="adventures-image-wrapper canoe-girl">	
+					
+					
+					
+						<div class="adventures-details canoe-girl-details">
+						<h2>
+							<a href="#">Getting Back to Nature in a Canoe</a></h2>
+						<a class="third-button" href="#">Read More</a>
 					</div>
-					<div class="adventures-details">
-					<h2>Getting Back to Nature in a Canoe</h2>
-					<a class="black-btn" href="#">Read Entry</a>
 					</div>
 				</div>		
-				<div>
-					<div class="adventures-image-wrapper">	
-					<a href="#"><img class="adventures-block-images" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/beach-bonfire.jpg' ?>"></a>
-					</div>
+				
+			<div class="adventures-block night-beach-block">
+					<div class="adventures-image-wrapper night-beach">	
+					
+					
+					
 					<div class="adventures-details">
-					<h2>A Night with friends at the Beach</h2>
-					<a class="black-btn" href="#">Read Entry</a>
+					<h2>
+						<a href="#">A Night with Friends at the Beach</a></h2>
+					<a class="third-button" href="#">Read More</a>
+					</div>
 					</div>
 				</div>	
-				<div>
-					<div class="adventures-image-wrapper">	
-					<a href="#"><img class="adventures-block-images" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/mountain-hikers.jpg' ?>"></a>
-					</div>
+			
+				<div class="adventures-block">
+					<div class="adventures-image-wrapper big-mountain">	
+					
+					
+					
 					<div class="adventures-details">
-					<h2>Taking in the view at Big Mountain</h2>
-					<p><a class="black-btn" href="#">Read Entry</a>
+					<h2>
+					<a href="#">Taking in the view at Big Mountain</a></h2>
+					<p><a class="third-button" href="#">Read More</a>
+					</div>
 					</div>
 				</div>	
-				<div>	
-					<div class="adventures-image-wrapper">	
-					<a href="#"><img class="adventures-block-images" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/night-sky.jpg' ?>"></a>
-					</div>
+				
+				<div class="adventures-block">	
+					<div class="adventures-image-wrapper night-sky">	
+					
+					
+					
 					<div class="adventures-details">
-					<h2>Star-Gazing at the Night Sky</h2>
-					<a class="black-btn" href="#">Read Entry</a>
+					<h2>
+					<a href="#">Star-Gazing at the Night Sky</a>
+					</h2>
+					<p class="night-sky-button"><a class="third-button" href="#">Read More</a></p>
 					</div>
+					</div>
+				
+				</div>
+
+				<div class="see-more-block">
+				<p class="btn see-more"><a href="#">More Adventures</a></p>		
 				</div>	
-			</div>		
+			</div> <!-- end of adventures-content -->
+				
+			
+			
 		
 		</section>				
 		</main><!-- #main -->
