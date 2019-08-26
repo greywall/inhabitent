@@ -702,4 +702,15 @@ a {
 	.product-grid-item {
 		width: 23.5%;
 	}
+	h2 {
+		font-size: .9rem;
+		font-weight: 400;
+	}
+	.product-info {
+		display: flex;
+		padding: .75rem .75rem;
+	}
+	.product-title-name {
+		margin: 0;
+	}
 	}

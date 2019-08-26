@@ -1184,6 +1184,19 @@ a {
 .post-type-archive .product-grid-item {
   width: 23.5%; }
 
+.post-type-archive h2 {
+  font-size: .9rem;
+  font-weight: 400; }
+
+.post-type-archive .product-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .75rem .75rem; }
+
+.post-type-archive .product-title-name {
+  margin: 0; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
