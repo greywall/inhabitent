@@ -794,4 +794,17 @@ a {
 			white-space: nowrap;
 			padding-right: .25rem; 
 		}
+		h1 {
+			text-align: center;
+			font-family: $font__secondary;
+			font-size: 2.4rem;
+			text-transform: uppercase;
+		   }
+		.taxonomy-category-description {
+			   font-size: 1.2rem;
+			   text-align: center;
+			   padding-bottom: 1.7rem;
+			   margin-bottom: 3rem;
+			   border-bottom: 1px dashed $color_border-grey;
+		   }
 }

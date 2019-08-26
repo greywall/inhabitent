@@ -22,7 +22,7 @@ get_header(); ?>
 				$terms = get_terms($arg);
 				foreach($terms as $term){ ?>
 				<div>
-				<p>
+				<p class="tax-desc-paragraph">
 					<a class="tax-desc" href="<?php echo get_term_link($term); ?>"> 
 						<?php echo $term->slug ?>
 					</a>

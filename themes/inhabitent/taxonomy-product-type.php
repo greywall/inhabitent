@@ -15,9 +15,9 @@ get_header(); ?>
 			<header class="page-header container">				
 					<div class="taxonomy-header-title">
 						<?php the_archive_title( '<h1 class="page-title">', '</h1>' );?>
-						<p class="taxonomy-category-description"> 
+						<div class="taxonomy-category-description"> 
 							<?php echo term_description(); ?> 
-						</p>
+						</div>
 					</div>				
 			</header><!-- .page-header -->
 			<div class="product-grid container">
