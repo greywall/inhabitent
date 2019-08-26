@@ -1249,6 +1249,46 @@ a {
 .post-type-archive .shop-stuff-title {
   margin-bottom: 0; }
 
+.tax-product-type .content-area {
+  padding: 4rem 0rem; }
+
+.tax-product-type .product-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.tax-product-type .product-grid-item {
+  width: 23.5%;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 1.5rem; }
+
+.tax-product-type h2 {
+  font-size: .9rem;
+  font-weight: 400; }
+
+.tax-product-type .product-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .75rem .75rem; }
+
+.tax-product-type .product-title-name {
+  margin: 0;
+  white-space: nowrap;
+  padding-right: .25rem; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/

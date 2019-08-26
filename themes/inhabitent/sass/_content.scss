@@ -692,7 +692,7 @@ a {
 
 	// Archive Product - Shop Page Styling
 
-	.post-type-archive {
+	.post-type-archive  {
 	.content-area {
 	padding: 4rem 0rem;	
 	
@@ -761,3 +761,37 @@ a {
 	margin-bottom: 0;	
 	}
 	}
+
+
+// Shop Product Pages - taxonomy-product-type
+
+.tax-product-type {
+	.content-area {
+		padding: 4rem 0rem;	
+		}
+		.product-grid {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: space-between;
+		}	
+		.product-grid-item {
+			width: 23.5%;
+			border: 1px solid $color_border-grey;
+			margin-bottom: 1.5rem;
+		}
+		h2 {
+			font-size: .9rem;
+			font-weight: 400;
+		}
+		.product-info {
+			display: flex;
+			justify-content: space-between;
+			padding: .75rem .75rem;
+		}
+		.product-title-name {
+			margin: 0;
+			white-space: nowrap;
+			padding-right: .25rem; 
+		}
+}
