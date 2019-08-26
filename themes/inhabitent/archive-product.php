@@ -21,34 +21,37 @@ get_header(); ?>
 				];
 				$terms = get_terms($arg);
 				foreach($terms as $term){ ?>
+				<div>
 				<p>
 					<a class="tax-desc" href="<?php echo get_term_link($term); ?>"> 
 						<?php echo $term->slug ?>
 					</a>
 				</p>
+				</div>
 				<?php	
 				};
 				?>
 			</div>	<!-- end of product-description -->
 			</header><!-- .page-header -->
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-			
 			<div class="product-grid">
-				<div class="thumbnail-wrapper">	
-					 <a href="<?php echo get_the_permalink(); ?>">
-						<?php the_post_thumbnail(); ?> 
-					</a>
-				</div>	
-				<div class="product-info">
-					<h2 class="product-title-name">
-					<?php the_title(); ?>					
-					<span class="dots">..............................</span>
-					<span class="product-price">
-					<?php echo '$'; echo CFS()->get( 'product_price' ); echo '.00'; ?>
-					</span>	
-					</h2>		
+				<?php /* Start the Loop */ ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+			
+				<div class="product-grid-item">
+					<div class="thumbnail-wrapper">	
+						<a href="<?php echo get_the_permalink(); ?>">
+							<?php the_post_thumbnail(); ?> 
+						</a>
+					</div>	
+					<div class="product-info">
+						<h2 class="product-title-name">
+						<?php the_title(); ?>	
+						</h2>				
+						<div class="dots"></div>
+						<div class="product-price">
+						<?php echo '$'; echo CFS()->get( 'product_price' ); echo '.00'; ?>
+						</div>	
+				</div>
 				</div>
 			</div>	
 			<?php endwhile; ?>
