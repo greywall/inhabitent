@@ -508,7 +508,7 @@ a {
 
 
 
-.archive, .blog, .single-post {
+.date, .blog, .single-post {
 	.site-content {
 		display: flex;
 		max-width: 1120px;
@@ -518,7 +518,7 @@ a {
 	}
 }
 
-.archive, .blog, .single-post {
+.date, .blog, .single-post {
 		.content-area {
 		border-right: 2px !important;
 		border-width: 2px !important;
@@ -531,7 +531,7 @@ a {
 }
 
 
-.archive, .blog, .single-post {
+.date, .blog, .single-post {
 	.widget-area {
 		padding-left: 5%;
 		width: 27%;
@@ -541,7 +541,7 @@ a {
 }
 
 
-.archive, .blog, .single-post {
+.date, .blog, .single-post {
 	.entry-header {
 	img {
 		height: auto;
@@ -551,13 +551,13 @@ a {
 	}
 
 	
-	.archive, .blog {	
+	.date, .blog {	
 	.entry-title {
 	position: absolute;
 	}
 	}
 
-	.archive, .blog, {
+	.date, .blog, {
 	.entry-header {
 	a {
 	color: $color__background-body;
@@ -568,7 +568,7 @@ a {
 	}
 }
 
-.archive, .blog, .single-post {
+.date, .blog, .single-post {
 	.type-post {
 	h2,h1 {
 	padding-top: 0.75rem;
@@ -582,7 +582,7 @@ a {
 	}
 }
 
-.archive, .blog, .single-post {
+.date, .blog, .single-post {
 	.entry-meta {
 		background-color: $color__inhabitent-green;
 		bottom: 0px;
@@ -599,7 +599,7 @@ a {
 	}
 	}
 
-	.archive, .blog, .single-post {
+	.date, .blog, .single-post {
 	.hentry {
 		margin-bottom: 4.5rem;
 	}
@@ -609,7 +609,7 @@ a {
 }
 
 
-.archive, .blog, .single-post {
+.date, .blog, .single-post {
 	.entry-header {
 		position: relative;
 		line-height: 0;
@@ -655,7 +655,7 @@ a {
 	}
 }
 
-.archive {
+.date {
 	.page-title {
 	margin-top: 0;
 	line-height: 1.25;
@@ -685,4 +685,21 @@ a {
 	padding: .75rem 1rem; 
 	}
 	}	
+	}
+.nav-previous, .nav-next {
+	
+}
+
+	// Archive Product - Shop Page Styling
+
+	.post-type-archive {
+	.product-grid {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+	}	
+	.product-grid-item {
+		width: 23.5%;
+	}
 	}

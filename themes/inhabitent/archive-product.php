@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-		<header class="page-header">
+		<div class="page-header">
 			<h1>Shop Stuff</h1>
 			<div class="product-description">
 				<?php
@@ -32,8 +32,8 @@ get_header(); ?>
 				};
 				?>
 			</div>	<!-- end of product-description -->
-			</header><!-- .page-header -->
-			<div class="product-grid">
+			</div><!-- .page-header -->
+			<div class="product-grid container">
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 			
@@ -53,9 +53,9 @@ get_header(); ?>
 						</div>	
 				</div>
 				</div>
-			</div>	
+				
 			<?php endwhile; ?>
-
+			</div> <!-- End of product grid -->
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>

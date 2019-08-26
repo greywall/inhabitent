@@ -46,7 +46,7 @@ get_header(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 
-			<?php the_post_navigation(); ?>
+			
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
