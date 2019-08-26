@@ -1167,6 +1167,9 @@ a {
   font-size: 1.2rem;
   padding: .75rem 1rem; }
 
+.post-type-archive .content-area {
+  padding: 4rem 0rem; }
+
 .post-type-archive .product-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1182,7 +1185,9 @@ a {
           justify-content: space-between; }
 
 .post-type-archive .product-grid-item {
-  width: 23.5%; }
+  width: 23.5%;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 1.5rem; }
 
 .post-type-archive h2 {
   font-size: .9rem;
@@ -1192,10 +1197,57 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: .75rem .75rem; }
 
 .post-type-archive .product-title-name {
-  margin: 0; }
+  margin: 0;
+  white-space: nowrap;
+  padding-right: .25rem; }
+
+.post-type-archive .thumbnail-wrapper {
+  border-bottom: 4px solid #e1e1e1;
+  padding-bottom: 0; }
+
+.post-type-archive .product-price {
+  padding-left: .25rem; }
+
+.post-type-archive .dots {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow: hidden; }
+  .post-type-archive .dots::after {
+    content: '.........................................................'; }
+
+.post-type-archive .thumbnail-wrapper {
+  line-height: 0; }
+
+.post-type-archive h1 {
+  text-align: center;
+  font-family: "Novecento Sans Web", Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase; }
+
+.post-type-archive .product-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px dashed #e1e1e1; }
+  .post-type-archive .product-description p {
+    padding: 0 2rem; }
+
+.post-type-archive .shop-stuff-title {
+  margin-bottom: 0; }
 
 /*--------------------------------------------------------------
 # Media

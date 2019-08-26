@@ -11,8 +11,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-		<div class="page-header">
-			<h1>Shop Stuff</h1>
+		<div class="page-header container">
+			<h1 class="shop-stuff-title">Shop Stuff</h1>
 			<div class="product-description">
 				<?php
 				$arg = [

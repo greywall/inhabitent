@@ -693,6 +693,10 @@ a {
 	// Archive Product - Shop Page Styling
 
 	.post-type-archive {
+	.content-area {
+	padding: 4rem 0rem;	
+	
+	}	
 	.product-grid {
 		display: flex;
 		flex-wrap: wrap;
@@ -701,6 +705,8 @@ a {
 	}	
 	.product-grid-item {
 		width: 23.5%;
+		border: 1px solid $color_border-grey;
+		margin-bottom: 1.5rem;
 	}
 	h2 {
 		font-size: .9rem;
@@ -708,9 +714,50 @@ a {
 	}
 	.product-info {
 		display: flex;
+		justify-content: space-between;
 		padding: .75rem .75rem;
 	}
 	.product-title-name {
 		margin: 0;
+		white-space: nowrap;
+		padding-right: .25rem; 
+	}
+	.thumbnail-wrapper {
+		border-bottom: 4px solid $color_border-grey;
+		padding-bottom: 0;
+	}
+	.product-price {
+		padding-left: .25rem;
+	}
+	.dots {
+		flex-grow: 1;
+		overflow: hidden;
+		&::after {
+		  content: '.........................................................';
+		}
+	  }
+	 .thumbnail-wrapper {
+		 line-height: 0;
+	 } 
+	 h1 {
+		 text-align: center;
+		 font-family: $font__secondary;
+		 font-size: 2.4rem;
+		 text-transform: uppercase;
+		}
+		.product-description {
+			display: flex;
+			justify-content: center;
+			text-transform: uppercase;
+			font-size: 1.2rem;
+			padding-bottom: 2rem;
+			margin-bottom: 3rem;
+			border-bottom: 1px dashed $color_border-grey;
+	p {
+	padding: 0 2rem;
+	}	
+	 }
+	.shop-stuff-title {
+	margin-bottom: 0;	
 	}
 	}
