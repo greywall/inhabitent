@@ -1209,7 +1209,11 @@ a {
 
 .post-type-archive .thumbnail-wrapper {
   border-bottom: 4px solid #e1e1e1;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  max-height: auto;
+  max-width: auto; }
+  .post-type-archive .thumbnail-wrapper img {
+    max-height: 250px; }
 
 .post-type-archive .product-price {
   padding-left: .25rem; }
@@ -1242,12 +1246,15 @@ a {
   font-size: 1.2rem;
   padding-bottom: 2rem;
   margin-bottom: 3rem;
-  border-bottom: 1px dashed #e1e1e1; }
+  border-bottom: 1px dashed #e1e1e1;
+  font-family: "Novecento Sans Web", Arial, Helvetica, sans-serif; }
   .post-type-archive .product-description p {
     padding: 0 2rem; }
 
 .post-type-archive .shop-stuff-title {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-size: 2.4rem;
+  letter-spacing: 2px; }
 
 .tax-product-type .content-area {
   padding: 4rem 0rem; }
@@ -1301,6 +1308,50 @@ a {
   padding-bottom: 1.7rem;
   margin-bottom: 3rem;
   border-bottom: 1px dashed #e1e1e1; }
+
+.single-product .content-area {
+  padding: 4rem 0rem; }
+
+.single-product .content-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem; }
+
+.single-product .entry-header {
+  width: 48%; }
+  .single-product .entry-header img {
+    width: 100%;
+    height: auto; }
+
+.single-product .product-details-holder {
+  width: 48%; }
+
+.single-product .entry-title {
+  color: #d99054;
+  font-size: 2.4rem;
+  margin-bottom: .5rem; }
+
+.single-product .product-price {
+  font-size: 1.8rem;
+  font-family: "Novecento Sans Web", Arial, Helvetica, sans-serif;
+  margin-bottom: 1.5rem; }
+
+.single-product .entry-content {
+  line-height: 1.75; }
+
+.single-product .social-media-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 2.5rem;
+  width: 58%; }
 
 /*--------------------------------------------------------------
 # Media
