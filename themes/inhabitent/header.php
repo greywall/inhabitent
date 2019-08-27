@@ -26,7 +26,7 @@
 							
 
 							<div class="logo">
-								<a href="http://localhost:8888/inhabitent/" rel="home">
+								<a href=" <?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 								<h1 class="site-logo">Inhabitent</h1>
 								</a>
 							</div>	
