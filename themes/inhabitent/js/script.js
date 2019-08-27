@@ -1,17 +1,21 @@
 (function ($) {
 
-    $('.search-field').hide();
+    // $('.search-field').hide();
 
-    $('.icon-search').click(function (event) {
+    const $searchField = $('.site-header .search-field');
+    const $searchIcon = $('.icon-search');
+
+    $searchIcon.click(function (event) {
 
         // Don't follow the link
         event.preventDefault();
         
-        $('.search-field').show().focus();
+        $searchField.addClass('search-field-active').focus();
     });
 
-    $('.search-field').on('blur', function(){
-        $('.search-field').hide();
+    $searchField.on('blur', function(){
+        $(this).removeClass('search-field-active');
     });
 
 }) (jQuery);
+
