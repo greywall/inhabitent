@@ -1053,7 +1053,7 @@ a {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
-.date .site-content, .blog .site-content, .single-post .site-content {
+.date .site-content, .error404 .site-content, .tag .site-content, .category .site-content, .search-results .site-content, .search-no-results .site-content, .blog .site-content, .single-post .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1061,7 +1061,7 @@ a {
   margin: 0 auto;
   padding-top: 50px; }
 
-.date .content-area, .blog .content-area, .single-post .content-area {
+.date .content-area, .error404 .content-area, .tag .content-area, .category .content-area, .search-results .content-area, .search-no-results .content-area, .blog .content-area, .single-post .content-area {
   border-right: 2px !important;
   border-width: 2px !important;
   border-color: aqua;
@@ -1070,25 +1070,25 @@ a {
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
-.date .widget-area, .blog .widget-area, .single-post .widget-area {
+.date .widget-area, .error404 .widget-area, .tag .widget-area, .category .widget-area, .search-results .widget-area, .search-no-results .widget-area, .blog .widget-area, .single-post .widget-area {
   padding-left: 5%;
   width: 27%;
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
-.date .entry-header img, .blog .entry-header img, .single-post .entry-header img {
+.date .entry-header img, .error404 .entry-header img, .tag .entry-header img, .category .entry-header img, .search-results .entry-header img, .search-no-results .entry-header img, .blog .entry-header img, .single-post .entry-header img {
   height: auto;
   width: 100%; }
 
-.date .entry-title, .blog .entry-title {
+.date .entry-title, .error404 .entry-title, .tag .entry-title, .category .entry-title, .blog .entry-title {
   position: absolute; }
 
-.date .entry-header a, .blog .entry-header a {
+.date .entry-header a, .error404 .entry-header a, .tag .entry-header a, .category .entry-header a, .blog .entry-header a {
   color: #fff;
   font-size: 2.1rem;
   line-height: 1.2; }
 
-.date .type-post h2, .date .type-post h1, .blog .type-post h2, .blog .type-post h1, .single-post .type-post h2, .single-post .type-post h1 {
+.date .type-post h2, .date .type-post h1, .error404 .type-post h2, .error404 .type-post h1, .tag .type-post h2, .tag .type-post h1, .category .type-post h2, .category .type-post h1, .blog .type-post h2, .blog .type-post h1, .single-post .type-post h2, .single-post .type-post h1 {
   padding-top: 0.75rem;
   padding-right: 1.5rem;
   padding-bottom: 0.75rem;
@@ -1097,7 +1097,7 @@ a {
   max-width: 75%;
   background-color: #248A83; }
 
-.date .entry-meta, .blog .entry-meta, .single-post .entry-meta {
+.date .entry-meta, .error404 .entry-meta, .tag .entry-meta, .category .entry-meta, .blog .entry-meta, .single-post .entry-meta {
   background-color: #248A83;
   bottom: 0px;
   right: 0;
@@ -1111,17 +1111,17 @@ a {
   display: inline-block;
   line-height: 0; }
 
-.date .hentry, .blog .hentry, .single-post .hentry {
+.date .hentry, .error404 .hentry, .tag .hentry, .category .hentry, .search-results .hentry, search-no-results .hentry, .blog .hentry, .single-post .hentry {
   margin-bottom: 4.5rem; }
 
-.date .entry-content p, .blog .entry-content p, .single-post .entry-content p {
+.date .entry-content p, .error404 .entry-content p, .tag .entry-content p, .category .entry-content p, .search-results .entry-content p, search-no-results .entry-content p, .blog .entry-content p, .single-post .entry-content p {
   margin-top: 1.5rem; }
 
-.date .entry-header, .blog .entry-header, .single-post .entry-header {
+.date .entry-header, .error404 .entry-header, .tag .entry-header, .category .entry-header, .blog .entry-header, .single-post .entry-header {
   position: relative;
   line-height: 0; }
 
-.date .entry-title, .blog .entry-title, .single-post .entry-title {
+.date .entry-title, .error404 .entry-title, .tag .entry-title, .category .entry-title, .blog .entry-title, .single-post .entry-title {
   position: absolute;
   top: 0;
   left: 0; }
@@ -1146,7 +1146,7 @@ a {
   color: #fff;
   font-size: 2.1rem; }
 
-.date .page-title {
+.date .page-title, .error404 .page-title, .tag .page-title, .category .page-title {
   margin-top: 0;
   line-height: 1.25;
   font-size: 2.4rem;
@@ -1154,7 +1154,7 @@ a {
   font-family: "Novecento Sans Web", Arial, Helvetica, sans-serif;
   text-transform: uppercase; }
 
-.date hr {
+.date hr, .error404 hr, .tag hr, .category hr {
   margin-bottom: 3rem; }
 
 .footer-logo img {
@@ -1352,6 +1352,34 @@ a {
           justify-content: space-between;
   height: 2.5rem;
   width: 58%; }
+
+.search-results h1, search-no-results h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-family: "Novecento Sans Web", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 1rem; }
+
+.search-results main h2, search-no-results main h2 {
+  font-size: 2.1rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem; }
+
+.search-results main .p, search-no-results main .p {
+  margin-bottom: rem; }
+
+.search-results main .entry-meta, search-no-results main .entry-meta {
+  bottom: 0px;
+  right: 0;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 0;
+  font-size: .90rem; }
 
 /*--------------------------------------------------------------
 # Media

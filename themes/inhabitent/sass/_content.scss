@@ -143,7 +143,7 @@ label {
 	text-transform: uppercase;	
 }
 
-.page-home{
+.page-home {
 .entry-meta p {
 	font-size: .75rem;
 	padding: 0;
@@ -508,7 +508,7 @@ a {
 
 
 
-.date, .blog, .single-post {
+.date, .error404, .tag, .category, .search-results, .search-no-results, .blog, .single-post {
 	.site-content {
 		display: flex;
 		max-width: 1120px;
@@ -518,7 +518,7 @@ a {
 	}
 }
 
-.date, .blog, .single-post {
+.date, .error404, .tag, .category, .search-results, .search-no-results, .blog, .single-post {
 		.content-area {
 		border-right: 2px !important;
 		border-width: 2px !important;
@@ -531,7 +531,7 @@ a {
 }
 
 
-.date, .blog, .single-post {
+.date, .error404, .tag, .category, .search-results, .search-no-results, .blog, .single-post {
 	.widget-area {
 		padding-left: 5%;
 		width: 27%;
@@ -541,7 +541,7 @@ a {
 }
 
 
-.date, .blog, .single-post {
+.date, .error404, .tag, .category, .search-results, .search-no-results, .blog, .single-post {
 	.entry-header {
 	img {
 		height: auto;
@@ -551,13 +551,13 @@ a {
 	}
 
 	
-	.date, .blog {	
+	.date, .error404, .tag, .category,  .blog {	
 	.entry-title {
 	position: absolute;
 	}
 	}
 
-	.date, .blog, {
+	.date, .error404, .tag, .category,  .blog, {
 	.entry-header {
 	a {
 	color: $color__background-body;
@@ -568,7 +568,7 @@ a {
 	}
 }
 
-.date, .blog, .single-post {
+.date, .error404, .tag, .category,  .blog, .single-post {
 	.type-post {
 	h2,h1 {
 	padding-top: 0.75rem;
@@ -582,7 +582,7 @@ a {
 	}
 }
 
-.date, .blog, .single-post {
+.date, .error404, .tag, .category,  .blog, .single-post {
 	.entry-meta {
 		background-color: $color__inhabitent-green;
 		bottom: 0px;
@@ -599,7 +599,7 @@ a {
 	}
 	}
 
-	.date, .blog, .single-post {
+	.date, .error404, .tag, .category, .search-results, search-no-results, .blog, .single-post {
 	.hentry {
 		margin-bottom: 4.5rem;
 	}
@@ -609,7 +609,7 @@ a {
 }
 
 
-.date, .blog, .single-post {
+.date, .error404, .tag, .category, .blog, .single-post {
 	.entry-header {
 		position: relative;
 		line-height: 0;
@@ -655,7 +655,7 @@ a {
 	}
 }
 
-.date {
+.date, .error404, .tag, .category, {
 	.page-title {
 	margin-top: 0;
 	line-height: 1.25;
@@ -858,9 +858,44 @@ a {
 		justify-content: space-between;
 		height: 2.5rem;
 		width: 58%;
-	button {
 		
-	}	
-
 	}
 }
+
+// Search Page Styling
+
+.search-results, search-no-results {
+ h1 {
+	 font-size: 2.4rem;
+	 font-weight: 600;
+	 font-family: $font__secondary;
+	 text-transform: uppercase;
+	 letter-spacing: 2px;
+	 border-bottom: 1px solid $color_border-grey;
+	 padding-bottom: 1rem;
+ }
+ main {
+ h2 {
+	 font-size: 2.1rem;
+	 margin-top: 2rem;
+	 margin-bottom: 1.5rem;
+ }
+ .p {
+	margin-bottom: rem; 
+ }
+ .entry-meta {
+		bottom: 0px;
+		right: 0;
+		padding-right: 1.5rem;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+		text-transform: uppercase;
+		display: inline-block;
+		line-height: 0;
+		font-size: .90rem;
+ }
+ }
+}
+
+
+//  End of Search Page Styling
