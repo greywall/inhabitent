@@ -740,6 +740,13 @@ a {
     .main-navigation-dark a:hover {
       color: #f0e4d1; }
 
+.page-about .main-navigation {
+  text-shadow: 1px 1px 1px #404040; }
+  .page-about .main-navigation a {
+    color: #fff; }
+    .page-about .main-navigation a:hover {
+      color: #f0e4d1; }
+
 .all-product-types img {
   height: 70px;
   width: 70px; }

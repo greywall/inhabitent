@@ -18,6 +18,7 @@
     $('.page-about .site-logo').removeClass('site-logo-dark');
 
     $('.page-home .main-navigation').addClass('main-navigation-dark');
+    $('.page-about .main-navigation').addClass('main-navigation-dark');
 
 
 
