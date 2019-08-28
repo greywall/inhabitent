@@ -16,6 +16,15 @@ get_header(); ?>
 
 			<?php the_post_navigation(); ?>
 
+			<div class="social-media-buttons">
+
+			<button class="black-btn"><i class="fa fa-facebook"></i> Like</p>
+			<button class="black-btn"><i class="fa fa-twitter"></i> Tweet</p>
+			<button class="black-btn"><i class="fa fa-pinterest"></i> Pin</p>
+			
+			</div>
+
+
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :

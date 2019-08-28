@@ -698,7 +698,7 @@ a {
 
 	// Archive Product - Shop Page Styling
 
-	.post-type-archive  {
+	.post-type-archive, .tax-product-type  {
 	.content-area {
 	padding: 4rem 0rem;	
 	
@@ -860,14 +860,17 @@ a {
 	.entry-content {
 		line-height: 1.75;
 	}
+}
+
+.single-product, .single-post {
 	.social-media-buttons {
 		display: flex;
 		justify-content: space-between;
 		height: 2.5rem;
 		width: 58%;
-		
 	}
-}
+	}
+
 
 // Search Page Styling
 
@@ -948,3 +951,59 @@ a {
 		border-bottom: none;
 		}
 	}
+
+	.comment-form-author,.comment-form-email{
+		float:left
+	}
+
+	.comment-form-author input,.comment-form-email input{
+		width:100%
+	}
+
+	.comment-form-author{
+		margin-right:1%;width:49%
+	}
+
+	.comment-form-email{
+		margin-left:1%;width:49%
+	}
+
+	.comment-form-url{
+		clear:left;width:100%
+	}
+
+	.comment-form-url input{
+		width:100%
+	}
+	
+	.comment-reply-title, {
+		margin-top: 1.5rem;
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		font-family: $font__secondary;
+	}
+
+	.comment-form-comment{
+		textarea {
+			width: 100%;
+		}
+	}
+
+	.comments-title {
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		font-family: $font__secondary;	
+	}
+
+	.comment-author-avatar {
+		border-radius: 50%;
+		height: 64px;
+		margin-right: 1.5rem;
+		overflow: hidden;
+		width: 64px;
+	}
+
+	.comment-list {
+		list-style: none;
+	}
+

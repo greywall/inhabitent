@@ -1177,10 +1177,10 @@ a {
   font-size: 1.2rem;
   padding: .75rem 1rem; }
 
-.post-type-archive .content-area {
+.post-type-archive .content-area, .tax-product-type .content-area {
   padding: 4rem 0rem; }
 
-.post-type-archive .product-grid {
+.post-type-archive .product-grid, .tax-product-type .product-grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1194,16 +1194,16 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.post-type-archive .product-grid-item {
+.post-type-archive .product-grid-item, .tax-product-type .product-grid-item {
   width: 23.5%;
   border: 1px solid #e1e1e1;
   margin-bottom: 1.5rem; }
 
-.post-type-archive h2 {
+.post-type-archive h2, .tax-product-type h2 {
   font-size: .9rem;
   font-weight: 400; }
 
-.post-type-archive .product-info {
+.post-type-archive .product-info, .tax-product-type .product-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1212,42 +1212,42 @@ a {
           justify-content: space-between;
   padding: .75rem .75rem; }
 
-.post-type-archive .product-title-name {
+.post-type-archive .product-title-name, .tax-product-type .product-title-name {
   margin: 0;
   white-space: nowrap;
   padding-right: .25rem; }
 
-.post-type-archive .thumbnail-wrapper {
+.post-type-archive .thumbnail-wrapper, .tax-product-type .thumbnail-wrapper {
   border-bottom: 4px solid #e1e1e1;
   padding-bottom: 0;
   max-height: auto;
   max-width: auto; }
-  .post-type-archive .thumbnail-wrapper img {
+  .post-type-archive .thumbnail-wrapper img, .tax-product-type .thumbnail-wrapper img {
     max-height: 250px;
     -o-object-fit: cover;
        object-fit: cover; }
 
-.post-type-archive .product-price {
+.post-type-archive .product-price, .tax-product-type .product-price {
   padding-left: .25rem; }
 
-.post-type-archive .dots {
+.post-type-archive .dots, .tax-product-type .dots {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   overflow: hidden; }
-  .post-type-archive .dots::after {
+  .post-type-archive .dots::after, .tax-product-type .dots::after {
     content: '.........................................................'; }
 
-.post-type-archive .thumbnail-wrapper {
+.post-type-archive .thumbnail-wrapper, .tax-product-type .thumbnail-wrapper {
   line-height: 0; }
 
-.post-type-archive h1 {
+.post-type-archive h1, .tax-product-type h1 {
   text-align: center;
   font-family: "Novecento Sans Web", Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   text-transform: uppercase; }
 
-.post-type-archive .product-description {
+.post-type-archive .product-description, .tax-product-type .product-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1260,10 +1260,10 @@ a {
   margin-bottom: 3rem;
   border-bottom: 1px dashed #e1e1e1;
   font-family: "Novecento Sans Web", Arial, Helvetica, sans-serif; }
-  .post-type-archive .product-description p {
+  .post-type-archive .product-description p, .tax-product-type .product-description p {
     padding: 0 2rem; }
 
-.post-type-archive .shop-stuff-title {
+.post-type-archive .shop-stuff-title, .tax-product-type .shop-stuff-title {
   margin-bottom: 0;
   font-size: 2.4rem;
   letter-spacing: 2px; }
@@ -1355,7 +1355,7 @@ a {
 .single-product .entry-content {
   line-height: 1.75; }
 
-.single-product .social-media-buttons {
+.single-product .social-media-buttons, .single-post .social-media-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1418,6 +1418,51 @@ a {
 
 .page-home .site-header {
   border-bottom: none; }
+
+.comment-form-author, .comment-form-email {
+  float: left; }
+
+.comment-form-author input, .comment-form-email input {
+  width: 100%; }
+
+.comment-form-author {
+  margin-right: 1%;
+  width: 49%; }
+
+.comment-form-email {
+  margin-left: 1%;
+  width: 49%; }
+
+.comment-form-url {
+  clear: left;
+  width: 100%; }
+
+.comment-form-url input {
+  width: 100%; }
+
+.comment-reply-title {
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web", Arial, Helvetica, sans-serif; }
+
+.comment-form-comment textarea {
+  width: 100%; }
+
+.comments-title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web", Arial, Helvetica, sans-serif; }
+
+.comment-author-avatar {
+  border-radius: 50%;
+  height: 64px;
+  margin-right: 1.5rem;
+  overflow: hidden;
+  width: 64px; }
+
+.comment-list {
+  list-style: none; }
 
 /*--------------------------------------------------------------
 # Media
