@@ -33,7 +33,7 @@ foreach ( $terms as $term ) {
 	
 	
 	echo '<div class="product-type-holder">';
-	echo '<img src="' . get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg' . '" />';
+	echo '<img alt"product-type-icon" src="' . get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg' . '" />';
 	
 	echo '<p>' . $term->description . '</p>';
 	 

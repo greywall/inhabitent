@@ -507,7 +507,6 @@ a {
   float: left;
   font-family: Novecento Sans Web,sans-serif;
   text-transform: uppercase;
-  text-shadow: 1px 1px 1px #404040;
   line-height: 1.75rem; }
   .main-navigation ul {
     display: none;
@@ -718,18 +717,28 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  text-align: left; }
+  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .main-navigation li {
   padding-left: 1.5rem;
   position: relative; }
 
 .main-navigation a {
-  color: #fff;
+  color: #248A83;
   text-decoration: none;
   font-size: .9rem; }
   .main-navigation a:hover {
-    color: #f0e4d1; }
+    color: midnightblue; }
+
+.main-navigation-dark {
+  text-shadow: 1px 1px 1px #404040; }
+  .main-navigation-dark a {
+    color: #fff; }
+    .main-navigation-dark a:hover {
+      color: #f0e4d1; }
 
 .all-product-types img {
   height: 70px;
@@ -812,7 +821,6 @@ a {
   border-bottom: 5px solid #e1e1e1; }
 
 .logo h1 {
-  background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
   background-size: 50px 33px;
   height: 33px;
   width: 50px;
@@ -820,6 +828,14 @@ a {
   text-indent: 100%;
   white-space: nowrap;
   margin: 0; }
+
+.logo .site-logo {
+  background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
+  background-size: 50px 33px; }
+
+.logo .site-logo-dark {
+  background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
+  background-size: 50px 33px; }
 
 .page-home h2 {
   font-size: 2.4rem;
@@ -1389,15 +1405,19 @@ a {
   padding-top: .33rem;
   line-height: 1rem; }
 
-.site-header .search-field {
-  width: 0px;
-  opacity: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s; }
+.site-header {
+  border-bottom: 1px solid #e1e1e1; }
+  .site-header .search-field {
+    width: 0px;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+  .site-header .search-field-active {
+    width: 150px;
+    opacity: 1; }
 
-.site-header .search-field-active {
-  width: 150px;
-  opacity: 1; }
+.page-home .site-header {
+  border-bottom: none; }
 
 /*--------------------------------------------------------------
 # Media

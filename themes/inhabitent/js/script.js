@@ -1,7 +1,5 @@
 (function ($) {
 
-    // $('.search-field').hide();
-
     const $searchField = $('.site-header .search-field');
     const $searchIcon = $('.icon-search');
 
@@ -16,6 +14,12 @@
     $searchField.on('blur', function(){
         $(this).removeClass('search-field-active');
     });
+    $('.page-home .site-logo').removeClass('site-logo-dark');
+    $('.page-about .site-logo').removeClass('site-logo-dark');
+
+    $('.page-home .main-navigation').addClass('main-navigation-dark');
+
+
 
 }) (jQuery);
 

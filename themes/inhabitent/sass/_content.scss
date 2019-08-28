@@ -76,6 +76,7 @@ p {
 	display: flex;
 	flex-direction: row;
 	text-align: left;
+	align-items: center;
 	
 
 }
@@ -87,9 +88,19 @@ p {
 	position: relative;
 	}
 	a {
-	color: $color__background-body;
+	color: $color__inhabitent-green;
 	text-decoration: none;
 	font-size: .9rem;
+	&:hover {
+	color: $color__link-hover;
+	}
+	}
+}
+
+.main-navigation-dark {
+	text-shadow: 1px 1px 1px $color__text-main;
+	a {
+	color: $color__background-body;
 	&:hover {
 	color: $color__inhabitent-yellow;
 	}
@@ -197,7 +208,6 @@ left: $base__space-unit / 2;
 .logo {
 
 h1 {
-	background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
 	background-size: 50px 33px;
 	height: 33px;
 	width: 50px;
@@ -206,7 +216,18 @@ h1 {
 	white-space: nowrap;
 	margin: 0;
 }
+.site-logo {
+	background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
+	background-size: 50px 33px;
 }
+
+.site-logo-dark {
+	background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
+	background-size: 50px 33px;
+}
+}
+
+
 
 .page-home h2 {
 	font-size: 2.4rem;
@@ -907,7 +928,7 @@ a {
 
 
 	.site-header {
-
+		border-bottom: 1px solid $color_border-grey;
 		.search-field {
 			width: 0px;
 			opacity: 0;
@@ -919,6 +940,11 @@ a {
 		.search-field-active {
 			width: 150px;
 			opacity: 1;
+		}	
+	}
+
+	.page-home {
+	.site-header {
+		border-bottom: none;
 		}
-		
 	}

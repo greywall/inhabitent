@@ -27,7 +27,7 @@
 
 							<div class="logo">
 								<a href=" <?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-								<h1 class="site-logo">Inhabitent</h1>
+								<h1 class="site-logo site-logo-dark">Inhabitent</h1>
 								</a>
 							</div>	
 
