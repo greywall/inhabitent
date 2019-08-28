@@ -4,6 +4,7 @@
 !plugins/
 !themes/
 !uploads/
+!screenshots-readme/
 !README.md
 # Ignore everything in "plugins" except certain plugins. #
 plugins/*
