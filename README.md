@@ -8,4 +8,4 @@ Please open an issue for support.
 
 
 ## Hompage
-<img src="./screenshots-readme/Inhabitent-Homepage.gif"   width="400" height="400" alt="inhabitent-homepage" />
+<img src="./screenshots-readme/Inhabitent-Homepage.gif"   alt="inhabitent-homepage" />
