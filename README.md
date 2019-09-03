@@ -15,7 +15,7 @@ Please open an issue for support.
 <img src="./screenshots-readme/nav-menu.gif"   alt="nav-menu" />
 
 ## Navigation
-<img src="./screenshots-readme/nav-menu.png"   alt="inhabitent-nav" />
+<img src="./screenshots-readme/nav-menu.gif"   alt="inhabitent-nav" />
 
 
 ## Sidebar
