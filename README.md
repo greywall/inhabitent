@@ -10,12 +10,11 @@ Please open an issue for support.
 ## Hompage
 <img src="./screenshots-readme/Inhabitent-Homepage.gif"   alt="inhabitent-homepage" />
 
-
-## Navigation Menu
-<img src="./screenshots-readme/nav-menu.gif"   alt="nav-menu" />
-
 ## Navigation
 <img src="./screenshots-readme/nav-menu.gif"   alt="inhabitent-nav" />
+
+## Footer
+<img src="./screenshots-readme/inhabitent-footer.png"   alt="inhabitent-nav" />
 
 
 ## Sidebar
